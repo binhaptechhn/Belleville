@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Belleville Dental</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/yorbalindadental-logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<script>
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    jcount = eval(cookieVal("jaafarCounter"))
+    jcount++
+    document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+        thisCookie = document.cookie.split("; ")
+        for (i = 0; i < thisCookie.length; i++) {
+            if (cookieName == thisCookie[i].split("=")[0]) {
+                return thisCookie[i].split("=")[1]
+            }
+        }
+        return 0
+    }
+
+    function page_counter() {
+        for (i = 0; i < (6 - jcount.toString().length); i++)
+            document.write('<span class="counter">0</span>')
+        for (y = 0; y < (jcount.toString().length); y++)
+            document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
+    }
+
+</script>
+<body>
+    <div id="preloader">
+        <div id="status" >&nbsp;</div>
+      </div>
+
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><span>   <b class="view"><i class="bi bi-eye"></i>
+                        <SCRIPT>page_counter(jcount);</SCRIPT>
+                    </b></span><i class="far fa-clock text-primary me-2"></i><span id="hvn"></span> / Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open mailto:me-2"></i>bellevilledental@gmail.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Belleville Dental</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="professional.html" class="nav-item nav-link">Professional</a>
+                <a href="patient.html" class="nav-item nav-link">Patient</a>
+                <a href="research.html" class="nav-item nav-link">Research</a>
+                <a href="products.html" class="nav-item nav-link">Product</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Dental Knowledge</h1>
+                <a href="index.html" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="font text-white">Dental Knowledge</a>
+            </div>
+        </div>
+    </div>
+    <div class="section-title mb-4" id="aboutus" style="margin-left: 6%;">
+        <h5 class="position-relative d-inline-block text-primary text-uppercase"style="margin-left: 3%;">About Dental Knowledge</h5>
+    </div>
+    <h1 style="text-align:center;color: #06A3DA;">What is tooth decay? How to treat tooth decay?</h1>
+    <div class="img-DentalKnowledge">
+        <img src="img/rang-ham-mat-hiu.jpg" alt="">
+    </div>
+    <p style="color:black;font-size: 20px;padding: 0 10%;">
+        <b> Tooth decay </b> is a very common form of dental disease
+        in both adults and especially children. If treated early, tooth decay will no longer be a concern. However, you
+        should also not have the thought: It is okay to treat tooth decay to be a little slow. To have a better view of
+        dental caries, let's find out the article with Tan Dinh Dental Clinic: What is tooth decay? with ways to treat
+        tooth decay!
+    </p>
+    <div id="toc_container" class="toc_light_blue no_bullets">
+        <p class="toc_title">
+            Main Content
+            <span class="toc_toggle">
+                <button id="button_hide" onclick="hide()">
+                    [hide]
+                </button>
+
+        </p>
+        <ul id="toc_list" style="display:block;">
+            <li><a href="#concept">What is tooth decay?</a></li>
+            <li><a href="#cause">  What is the cause of tooth decay?</a></li>
+            <li><a href="#stage"> What are the stages of tooth decay?</a>
+                <ul>
+                    <li><a href="#treatment"> How to treat tooth decay?</a></li>
+                    <li><a href="#Habits_to_limit_tooth_decay"> Good habits to help limit tooth decay</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="container" style="font-weight: 400;">
+        <h2 id="concept">
+            What is tooth decay?
+        </h2>
+        <div id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/rang-khon-sau-gay-anh-huong-gi.jpg">
+        </div>
+        <p>
+            So what is <strong> tooth decay? </strong> Tooth decay is understood in the simplest way as a cost situation
+            understand how hard it is. Also known as the cancellation process. These brands do results
+            microbial growth and activity. Deeper is aformed variable disease on
+            teeth both in Vietnam and around the world. This is a value of the most normal root in young em. Everyone
+            have
+            possibility of infection in infants.
+        </p>
+        <p>
+            How will directory security take effect? Find out right through the article: “<strong> Signs and
+                consequences
+                when the tooth decay is severe? 3 ways to generalize the value of severe caries
+            </strong> ”
+
+        </p>
+        <h2 id="cause">
+            What is the cause of tooth decay?
+        </h2>
+        <p>Although tooth decay is a common disease, many people still do not have an accurate understanding of this
+            problem. Even
+            Many people even think that tooth decay is caused by "worms" that are worms and parasites in the teeth.
+            Is this a misunderstanding?
+            rare people get it. So what exactly is tooth decay?
+        </p>
+        <div id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/sau-rang-do-dau.jpg">
+        </div>
+        <ul>
+            <li>Plaque is the film on the teeth formed by sugar and starch. They are formed and
+                Stick on the surface after eating for 15-20 minutes. If not cleaned, they will combine with other
+                <a href="https://en.wikipedia.org/wiki/Enzym" target="_blank" rel="noopener noreferrer">enzyme</a>
+                It is present in saliva and forms plaque on the surface of teeth. In the long run, plaque will form
+                lime
+                teeth, they stick to the gum line and become a breeding ground for bacteria.
+            </li>
+            <li>The bacteria that cause tartar reside in the teeth and digest the plaque. They produce acid and
+                corrode the layer
+                minerals in tooth enamel. Then gradually eat into the dentin and pulp. Now we will feel the
+                sensitivity.
+            </li>
+            <li>When the bacteria that cause tooth decay thrive. They will cause inflammation and swelling of the
+                pulp chamber.
+            </li>
+        </ul>
+        <h2 id="stage">
+            What are the stages of tooth decay?
+        </h2>
+        <p>Dental caries does not arise "in one night", they have their own manifestations at each stage. So if
+            important
+            If you look closely, you can completely recognize tooth decay early. Tooth decay develops in 4
+            stages:
+        </p>
+        <div id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/4-giai-doan-phat-trien-cua-sau-rang.jpg">
+        </div>
+        <ul>
+            <li>Stage 1: This is the onset of caries. If you look closely on the tooth surface, you will see the
+                yellowish yellow or milky white spots. This is plaque and tartar. Usually in the stage
+                At this time, we will hardly be able to detect tooth decay without regular dental care and
+                examination
+                often.
+            </li>
+            <li>Stage 2: Mutans Streptococci bacteria will take advantage of plaque and tartar as a shelter and
+                metabolism. This process will produce an acid. They attack and erode tooth enamel.
+                Corrosion areas will turn black. If you pay close attention, you will feel that your teeth are
+                more susceptible to irritation
+                when eating hot, cold, sour food…
+            </li>
+            <li>Stage 3: The wormhole will grow wider and deeper. Bacteria attack the dentin layer and pulp,
+                causing
+                toothache. The pulp will become inflamed causing pain and bad breath.</li>
+            <li>Stage 4 - Myelitis. Bacteria will eat to the pulp of the tooth causing inflammation and death of
+                the pulp. In this case if
+                If not treated in time, the bacteria will attack the nerves and jawbone, causing swelling
+                and osteomyelitis.
+            </li>
+        </ul>
+        <h2 id="treatment">How to treat tooth decay?</h2>
+        <p>Depending on the condition of the tooth decay, dentists will have separate treatment methods for each
+            case.
+            Here are the 4 most popular tooth decay treatments today:
+        </p>
+        <div id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/cach-dieu-tri-sau-rang.jpg">
+        </div>
+        <ul>
+            <li>
+                <strong>Treatment of caries with Fluoride</strong>: In the early stages and mild enamel decay,
+                Dentists use fluoride to restore damaged enamel. This method uses
+                Fluoride comes in gel, foam, or liquid form to coat tooth surfaces.
+            </li>
+            <li>
+                <strong>Filling</strong>: In the case of tooth decay, a relative amount of enamel has been
+                eroded. In schools
+                In this case the use of Fluoride will no longer be feasible. Therefore, the dentist will proceed
+                to remove the enamel
+                damaged. Then clean and re-fill the deep hole with filling materials used in dentistry
+                faculty.
+            </li>
+            <li>
+                <strong>Porcelain crowns</strong>: Indicated in case of weak roots or deep holes but
+                No effect on tooth pulp. Dentists will use porcelain crowns to cover the cavity of the tooth
+                Porcelain teeth will help restore decayed teeth and protect the root and
+                pulp inside.
+            </li>
+            <li>
+                <strong>Teeth extraction</strong>: This is the worst case scenario when the tooth decay has
+                attacked and killed the pulp. Copper
+                When they cause the part of the jaw that surrounds the root of the tooth to become inflamed and
+                bony. In this case dentists
+                forced tooth removal, dredging, and deep cleaning.
+            </li>
+        </ul>
+        <h2 id="Habits_to_limit_tooth_decay">Good habits to help limit tooth decay</h2>
+        <p>
+            Most of the causes of tooth decay come from personal factors. So, with just small changes in habits,
+            Eating habits and living habits can help you prevent tooth decay. So good habits help limit
+            What is tooth decay?
+        </p>
+        <div id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/danh-rang-dung-cach.jpg">
+        </div>
+        <ul>
+            <li>
+                Brush your teeth at least twice a day, morning and evening. In addition, flossing
+                and
+                mouthwash will help you with optimal hygiene.
+            </li>
+            <li>Diet rich in calcium: eggs, milk, seafood.</li>
+            <li>Limit starchy foods, sugar and carbonated water.</li>
+            <li>
+                Avoid eating foods that are too hard, which will cause chipping and damage to tooth
+                enamel.
+            </li>
+            <li>
+                Besides, you should check your teeth periodically at reputable dental addresses every 6
+                months.
+            </li>
+        </ul>
+        <p>
+            If you need more detailed information, do not hesitate to contact Belleville Dental
+            immediately for a
+            consultation
+            The fastest and most accurate query.
+        </p>
+        <ul>
+            <li>
+                <p><b>Address:</b>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi</p>
+            </li>
+            <li>
+                <p><b>Website:</b><a href="index.html">Belleville Dental</a>
+                </p>
+            </li>
+            <li>
+                <p><b>Email:</b>Bellevilledental@gmail.com</a></p>
+            </li>
+            <li>
+                <p><b>Hotline:</b>012 345 67890</p>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="email" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4 ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Site Map</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                        <a class="text-light mb-2" href="abum.html"><i class="bi bi-arrow-right text-primary me-2"></i>Abum Customers</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#header-carousel"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#service"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#pricingplan"><i class="bi bi-arrow-right text-primary me-2"></i>Pricing Plan</a>
+                        <a class="text-light mb-2" href="#riviewcustomer"><i class="bi bi-arrow-right text-primary me-2"></i>Riview Customer</a>
+                        <a class="text-light mb-2" href="#ourdentist"><i class="bi bi-arrow-right text-primary me-2"></i>Our Dentist</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

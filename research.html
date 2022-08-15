@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Belleville Dental</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/yorbalindadental-logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<script>
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    jcount = eval(cookieVal("jaafarCounter"))
+    jcount++
+    document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+        thisCookie = document.cookie.split("; ")
+        for (i = 0; i < thisCookie.length; i++) {
+            if (cookieName == thisCookie[i].split("=")[0]) {
+                return thisCookie[i].split("=")[1]
+            }
+        }
+        return 0
+    }
+
+    function page_counter() {
+        for (i = 0; i < (6 - jcount.toString().length); i++)
+            document.write('<span class="counter">0</span>')
+        for (y = 0; y < (jcount.toString().length); y++)
+            document.write('<span class="counter">' + jcount.toString().charAt(y)
+ + '</span>')
+    }
+
+</script>
+<body ng-app="myApp">
+    <div id="preloader">
+        <div id="status" >&nbsp;</div>
+      </div>
+
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><span>   <b class="view"><i class="bi bi-eye"></i>
+                        <SCRIPT>page_counter(jcount);</SCRIPT>
+                    </b></span><i class="far fa-clock text-primary me-2"></i><span id="hvn"></span> / Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small> 
+                   
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>Bellevilledental@gmail.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Belleville Dental</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="professional.html" class="nav-item nav-link">Professional</a>
+                <a href="patient.html" class="nav-item nav-link">Patient</a>
+                <a href="research.html" class="nav-item nav-link">Research</a>
+                <a href="products.html" class="nav-item nav-link">Product</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Research</h1>
+                <a href="index.html" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="products.html" class="h4 text-white">Research</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="section-title mb-4" id="aboutus">
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Latest Research and Reviews</h5>
+                    </div>
+                    <h5 style="color: rgb(81, 178, 253) ;">Caries</h5>
+                    <p class="mb-4">Dental caries is the most common among childhood and chronic diseases
+                        non-communicability worldwide.</p>
+    
+                    <p class="mb-4">Analysis of the global burden of caries in children
+                        12 years old in six WHO regions in 2015, average SMT-R across regions
+                        North, Central and South America (AMRO) is 2.08, Europe (EURO) is 1.81, East
+                        South Asia (SERO) is 2.97, Eastern Mediterranean Regions (EMRO) is 1.64, West
+                        Pacific (WPRO) is 1.05 and Africa (AFRO) is 1.06. Globally, central
+                        mean SMT-R in 12-year-old children was estimated to be 1.86. </p>
+                    <p class="mb-4">This result is recorded in
+                        2015 reflects an average increase in SMT-R over 2004 of 1.61 and 2011
+                        is 1.67 [166] (Table1.1). In the Eastern Mediterranean region and Southeast Asia there is an
+                        increase in
+                        A significant increase in average SMT-R between 2004 and 2015. However, the most significant
+                        decrease in average SMTR was in the European region, with a 2004 mean SMT-R of 2.57.
+                        and in 2015 it was 1.81. This demonstrates an increase in the rate of tooth decay in developing
+                        countries
+                        development, and reduction of tooth decay in regions of developed countries such as Europe and
+                        Asia
+                        America. The two regions with the highest average SMT-R in the world are the Americas and
+                        Southeast Asia </p>
+                </div>
+                <div class="col-lg-7 img_reseach" data-wow-delay="0.4s" data-name="p-2">
+                    <img src="img/research2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="research_information" data-wow-delay="0.6s" data-name="p-3">
+
+        <div class="research_img"><img src="img/research1.jpg" alt="Research_img" data-wow-delay="0.6s" data-name="p-3"></div>
+        <div class="research_content">
+            <div class="name_research">
+                <h5 style="color: rgb(81, 178, 253) ;"> Oral Hygiene Behaviors and Caries Experience in Northwest
+                    Patients </h5>
+
+            </div>
+            <div class="name_author">Marilynn Rothen, RDH, MS, Northwest PRECEDENT Lead Regional Coordinator,1
+                Joana
+                Cunha-Cruz, DDS, PhD, Research Assistant Professor,2 Lingmei Zhou, MS, Data Analyst,3 Lloyd
+                Mancl,
+                PhD,
+                Research Associate Professor,4 Jackie S. Jones, Private practice dentist, Northwest PRECEDENT
+                Dentist-Investigator,5 and Joel Berg, DDS, MS, Dean6, on behalf of the Northwest PRECEDENT
+                network.
+                <div>
+                    <br> <button class="button_reserch" onclick="detail_1()"> See More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container hiddenContent " id="reseach_Northwest_Patents"  data-name="p-3">
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <p class="mb-5"><b>Objectives:</b>To investigate the association between oral hygiene behaviors
+                    (toothbrushing, water rinsing after brushing, interproximal cleaning, and adjunctive use of fluoride
+                    products) and recent caries (past 24 months) in a random sample of patients in Northwest PRECEDENT
+                    practices.</p>
+
+                <p class="mb-4"><b>Methods:</b>Practitioner-members of Northwest PRECEDENT dental Practice-based
+                    Research
+                    Network (PBRN) conducted a longitudinal study on caries risk assessment. At baseline patients
+                    completed a questionnaire on oral self-care, snacking, health, and socio-demographics. A dental
+                    exam recorded readily-visible heavy plaque and DMFT; chart review captured new caries and
+                    treatments in the previous 24 months. Bivariate and multiple GEE log-linear regression models
+                    stratified by age groups were used to relate oral hygiene behaviors to the primary outcome of
+                    mean dental caries in the past 24 months on data from 1400 patients in 63 practices. The primary
+                    exposure of interest was fluoride toothbrushing frequency. </p>
+                <p class="mb-4-lg-7"><b>Results:</b>Fluoride brushing once daily or more in patients 9-17 was
+                    significantly
+                    associated with 50% lower mean caries rates than fluoride brushing less than once daily (Rate (RR) )
+                    = 0.5; 95% confidence interval (CI) = 0.3-0.8). For patients 18-64 fluoride brushing twice or more
+                    daily was significantly associated with a 40% lower mean recent caries rate (RR = 0.6; 95% CI =
+                    0.4-0 ,9); in patients 65+, twice-daily fluoride brushing or more was not associated with lower
+                    rates of caries (RR = 1.1; 95% CI = 0.7-1.8). </p>
+            </div>
+            <div class="col-lg-5 img_reseach">
+                <img src="img/research3.png" style="padding:0;">
+            </div>
+            <p class="mb-4-lg-7"><b>Conclusions:</b>In the present study, the frequency of fluoride toothbrushing and
+                the presence of
+                readily-visible heavy plaque were the factors most strongly associated with mean caries rate. In
+                young patients with permanent dentition the daily application of fluoride toothpaste appears more
+                important than emphasis on thorough plaque removal. While for adults, the protective effect of twice
+                daily fluoride toothbrushing disappears with advancing age and the presence of readily-visible heavy
+                plaque becomes increasingly associated with caries risk.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="research_information">
+
+        <div class="research_img"><img src="img/research5.jpg" alt="Research_img" data-wow-delay="0.6s" data-name="p-3"></div>
+        <div class="research_content">
+            <div class="name_research">
+                <p>Dental Caries and Related Factor in the First - and Second - Year Medical
+                    University, Vietnam</p>
+            </div>
+            <div class="name_author">Thoai Quoc Kieu <p>6th year dental student, Faculty of
+                    Odonto-Stomatology,
+                    University of Medicine and Pharmacy, Ho Chi Minh City, 652 Nguyen Trai Str, District 5, Ho Chi Minh
+                    City, Vietnam</p>
+                </p>
+                <div>
+                    <button class="button_reserch" onclick="detail_2()">See More</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="container hiddenContent" id="reseach_Northwest_Patents2">
+        <div class="row">
+            <div class="col">
+                <p class="mb-5"><b>Objectives:</b>To assess the association of dental caries with self-reported dental
+                    caries, dental knowledge and habit; and with obesity in Vietnamese dental patients</p>
+                <p class="mb-4"><b>Methods:</b>A cross sectional study was conducted on 367 adults (148 males, 219
+                    females, mean age: 34.9 years old) who first visited at the Faculty of Odonto-Stomatology,
+                    University of Medicine and Pharmacy, Ho Chi Minh City, Vietnam. Self-reported dental caries, dental
+                    knowledge and habits, and anthropometric index were investigated by the self-administered
+                    questionnaire. Dental status including DT, MT, FT were examined. The multiple logistic regression
+                    analysis was performed to explore factors that were associated with dental caries. </p>
+                <p class="mb-4-lg-7"><b>Results:</b> Prevalence of dental caries in the study sample was 53.1%. The
+                    factors significantly related to dental caries were subjects having dental scaling during last year
+                    (OR=2.1; CI=1.1-4.0), self-checked teeth/gum frequency (OR=1.7; CI=1.0-3.0), self-reported dental
+                    caries (OR=2.4; CI=1.1-5.1), having knowledge on dental caries caused by bacteria (OR=2.1;
+                    CI=1.1-4.0), having knowledge on regular dental checkups (OR=3.9; CI=1.8-8.7) and overweight/obesity
+                    (OR=3.1; CI=1.5-6.2). </p>
+                <p class="mb-4-lg-7"><b>Conclusions:</b> Dental caries was associated with behavioral factors, dental
+                    knowledge and nutritional status in Vietnamese dental patients. Providing the dental knowledge with
+                    emphasis on oral self-checked oral disease behaviors and normal weight maintenance are necessary to
+                    prevent dental caries. Keywords: dental caries, dental habit, dental knowledge, obesity, vietnam
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="research_information">
+
+        <div class="research_img"><img src="img/research6.jpg" alt="Research_img"></div>
+        <div class="research_content">
+            <div class="name_research">
+                <p> Effective Dental Health Education Model To ParentSs Of Children With
+                    Congenital Heart Disease Between 2-16 Years</p>
+            </div> <br>
+            <div class="name_author">
+                <p>Nguyen Thi Thanh Lan, Le Duc Lanh
+                    Medicine TP. Ho Chi Minh Vol. 17 - Supplement of No 2 - 2013: 1 - 8</p>
+                <div>
+                    <button class="button_reserch" onclick="detail_3()">See More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container hiddenContent" id="reseach_Northwest_Patents3">
+        <div class="row g-5">
+            <div class="col">
+                <p class="mb-5"><b>Objectives:</b> This is a study to survey effective dental health education model
+                    to parents of children with
+                    congenital heart disease at Heart Institute of Ho Chi Minh City from May to September, 2012:
+                    assess
+                    parental knowledge, attitudes, and practices promotion about relating between dental health and
+                    the heart disease;
+                    oral hygiene status improvement of children with congenital heart disease after attending dental
+                    health education. </p>
+
+                <p class="mb-4"><b>Methods:</b>Forty-two parents completed a questionaire in which described parental
+                    knowledge, attitudes,
+                    and
+                    practices about their child’s dental health and heart disease. The study was recorded using Quigley
+                    Hein
+                    index to
+                    evaluate oral health status of children with congenital heart disease. </p>
+                <p class="mb-4-lg-7"><b>Results:</b> Prevalence of dental caries in the study sample was 53.1%. The
+                    factors significantly related to dental caries were subjects having dental scaling during last
+                    year
+                    (OR=2.1; CI=1.1-4.0), self-checked teeth/gum frequency (OR=1.7; CI=1.0-3.0), self-reported
+                    dental
+                    caries (OR=2.4; CI=1.1-5.1), having knowledge on dental caries caused by bacteria (OR=2.1;
+                    CI=1.1-4.0), having knowledge on regular dental checkups (OR=3.9; CI=1.8-8.7) and
+                    overweight/obesity
+                    (OR=3.1; CI=1.5-6.2). </p>
+                <p class="mb-4-lg-7"><b>Conclusions:</b>Parents dental health knowledge, attitudes, and practices
+                    relating to the heart disease were
+                    low and
+                    significantly increased after attending dental health education. Quigley Hein index were
+                    significantly
+                    decreased(p < 0.001) and 100% children with congenital heart disease have regularly brushed their
+                        teeth least 2 times a day. Conclusion: Parents dental care awareness were better to ensure their
+                        children get the much needed comprehensive care that is important for their childs wellbeing to
+                        forestall risk factors of infective endocarditis is produced as a result of dental disease. </p>
+            </div>
+        </div>
+    </div>
+    <div class="research_information">
+
+        <div class="research_img"><img src="img/research7.webp" alt="Research_img"></div>
+        <div class="research_content">
+            <div class="name_research">
+                <p> Peer-assessment ability of trainees in clinical restorative dentistry: can it be fostered?</p>
+            </div> <br>
+            <div class="name_author">
+                <p>Objectives: <br>
+                    The study was conducted to investigate whether peer-assessment among dental students at the clinical
+                    stage can be fostered and become closer to that of experienced faculty assessors.</p>
+                <div>
+                    <button class="button_reserch" onclick="detail_4()">See More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container hiddenContent" id="reseach_Northwest_Patents4">
+        <div class="row g-5">
+            <div class="col">
+                <p class="mb-5"><b>Objectives:</b> This is a study to survey effective dental health education model
+                    to parents of children with
+                    congenital heart disease at Heart Institute of Ho Chi Minh City from May to September, 2012:
+                    assess
+                    parental knowledge, attitudes, and practices promotion about relating between dental health and
+                    the heart disease;
+                    oral hygiene status improvement of children with congenital heart disease after attending dental
+                    health education. </p>
+
+                <p class="mb-4"><b>Methods:</b>A prospective pilot study was conducted in 2021 at the Faculty of
+                    Dentistry, Damascus University. Sixteen 5th year clinical students volunteered to participate in the
+                    study. A modified version of the validated Peer Direct Observation of Procedural Skills (Peer-DOPS)
+                    assessment form was used together with a grading rubric. Participants undertook peer-assessment on
+                    their colleagues across three encounters. The difference between peers and faculty assessment was
+                    the main variable.</p>
+                <p class="mb-4-lg-7"><b>Results:</b> The mean difference between peers and faculty assessment decreased
+                    after each encounter with a significant difference and a medium effect size between the first and
+                    third encounters (p = 0.016, d = 0.67). Peer-assessment was significantly higher than faculty,
+                    however, the overestimation declined with each encounter reducing the difference between peer- and
+                    faculty assessment. Peers’ perception of the educational benefit of conducting assessment was
+                    overwhelmingly positive, reporting improvements in their own performance.</p>
+                <p class="mb-4-lg-7"><b>Conclusions:</b>This pilot study provides preliminary evidence that dental
+                    students assessment ability of their peers can be fostered and become closer to that of experienced
+                    faculty assessment with practice and assessment-specific instruction. </p>
+            </div>
+        </div>
+    </div>
+    <div class="research_information">
+
+        <div class="research_img"><img src="img/research8.webp" alt="Research_img"></div>
+        <div class="research_content">
+            <div class="name_research">
+                <p> Determining the performance of a temperature sensor embedded into a mouthguard
+            </div> <br>
+            <div class="name_author">
+                <p>Abstract: <br>
+
+                    This study aimed to determine the steady-state errors of oral-based temperature sensors, that are
+                    embedded in mouthguards, using a robust assessment process.</p>
+                <div>
+                    <button class="button_reserch" onclick="detail_5()">See More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container hiddenContent " id="reseach_Northwest_Patents5">
+        <div class="row g-5">
+            <div class="col">
+                <p class="mb-5"><b>Objectives:</b> This is a study to survey effective dental health education model
+                    to parents of children with
+                    congenital heart disease at Heart Institute of Ho Chi Minh City from May to September, 2012:
+                    assess
+                    parental knowledge, attitudes, and practices promotion about relating between dental health and
+                    the heart disease;
+                    oral hygiene status improvement of children with congenital heart disease after attending dental
+                    health education. </p>
+
+                <p class="mb-4"><b>Methods:</b>Forty-two parents completed a questionaire in which described parental
+                    knowledge, attitudes,
+                    and
+                    practices about their child’s dental health and heart disease. The study was recorded using Quigley
+                    Hein
+                    index to
+                    evaluate oral health status of children with congenital heart disease. </p>
+                <p class="mb-4-lg-7"><b>Results:</b> PConcept and feasibility of pyro-catalytic tooth whitening
+                    The concept of pyro-catalysis for tooth whitening is generally to harvest ubiquitous oral
+                    motion-induced temperature fluctuation without additional equipment or power sources. As shown in
+                    Fig. 1b, oral temperature will change with typical daily activity. For example, when hot food (such
+                    as hot water) is ingested, oral temperature can rise from ∼36 to ∼48 °C. Conversely oral temperature
+                    will drop to ∼21 °C when consuming cold food (such as ice cream). As is demonstrated in this work,
+                    this readily available physical stimulus can be used to excite the properties of pyroelectric
+                    materials and enables the application of pyro-catalysts for tooth whitening. </p>
+                <p class="mb-4-lg-7"><b>Conclusions:</b>Parents dental health knowledge, attitudes, and practices
+                    relating to the heart disease were
+                    low and
+                    significantly increased after attending dental health education. Quigley Hein index were
+                    significantly
+                    decreased(p < 0.001) and 100% children with congenital heart disease have regularly brushed their
+                        teeth least 2 times a day. Conclusion: Parents dental care awareness were better to ensure their
+                        children get the much needed comprehensive care that is important for their childs wellbeing to
+                        forestall risk factors of infective endocarditis is produced as a result of dental disease. </p>
+            </div>
+        </div>
+    </div>
+    <div class="research_information">
+
+        <div class="research_img"><img src="img/research9.webp" alt="Research_img"></div>
+        <div class="research_content">
+            <div class="name_research">
+                <p> Pyro-catalysis for tooth whitening via oral temperature fluctuation</p>
+            </div> <br>
+            <div class="name_author">
+                <p>Tooth discoloration is becoming an increasingly common aesthetic problem because it jeopardizes
+                    people’s appearance and self-confidence1. Moreover, tooth discoloration readily results from
+                    external chromogens typically consumed in various food and beverages2,3.</p>
+                <div>
+                    <button class="button_reserch" onclick="detail_6()">See More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container hiddenContent" id="reseach_Northwest_Patents6">
+        <div class="row g-5">
+            <div class="col">
+                <p class="mb-5"><b>Objectives:</b> This is a study to survey effective dental health education model
+                    to parents of children with
+                    congenital heart disease at Heart Institute of Ho Chi Minh City from May to September, 2012:
+                    assess
+                    parental knowledge, attitudes, and practices promotion about relating between dental health and
+                    the heart disease;
+                    oral hygiene status improvement of children with congenital heart disease after attending dental
+                    health education. </p>
+
+                <p class="mb-4"><b>Methods:</b>Forty-two parents completed a questionaire in which described parental
+                    knowledge, attitudes,
+                    and
+                    practices about their child’s dental health and heart disease. The study was recorded using Quigley
+                    Hein
+                    index to
+                    evaluate oral health status of children with congenital heart disease. </p>
+                <p class="mb-4-lg-7"><b>Results:</b> PConcept and feasibility of pyro-catalytic tooth whitening
+                    The concept of pyro-catalysis for tooth whitening is generally to harvest ubiquitous oral
+                    motion-induced temperature fluctuation without additional equipment or power sources. As shown in
+                    Fig. 1b, oral temperature will change with typical daily activity. For example, when hot food (such
+                    as hot water) is ingested, oral temperature can rise from ∼36 to ∼48 °C. Conversely oral temperature
+                    will drop to ∼21 °C when consuming cold food (such as ice cream). As is demonstrated in this work,
+                    this readily available physical stimulus can be used to excite the properties of pyroelectric
+                    materials and enables the application of pyro-catalysts for tooth whitening. </p>
+                <p class="mb-4-lg-7"><b>Conclusions:</b>Parents dental health knowledge, attitudes, and practices
+                    relating to the heart disease were
+                    low and
+                    significantly increased after attending dental health education. Quigley Hein index were
+                    significantly
+                    decreased(p < 0.001) and 100% children with congenital heart disease have regularly brushed their
+                        teeth least 2 times a day. Conclusion: Parents dental care awareness were better to ensure their
+                        children get the much needed comprehensive care that is important for their childs wellbeing to
+                        forestall risk factors of infective endocarditis is produced as a result of dental disease. </p>
+            </div>
+        </div>
+    </div>
+    <div class="research_information">
+
+        <div class="research_img"><img src="img/research10.webp" alt="Research_img"></div>
+        <div class="research_content">
+            <div class="name_research">
+                <p> Thread shape, cortical bone thickness, and magnitude and distribution of stress caused by the
+                    loading of orthodontic miniscrews: finite element analysis</p>
+            </div> <br>
+            <div class="name_author">
+                <p>In clinical orthodontics, miniscrews are implanted directly into the bone and offer absolute
+                    anchorage for different types of tooth movement1,2. They also provide biocompatibility, reduced
+                    discomfort, less invasiveness, and few limitations in placement as compared with miniplates3,4.
+                    Notwithstanding their small diameter and short length, miniscrews are an efficient modality
+                    available within modern orthodontic treatment1,2,5. For these reasons, miniscrews are widely
+                    accepted by both orthodontists and patients6,7.</p>
+                <div>
+                    <button class="button_reserch" onclick="detail_7()">See More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container hiddenContent" id="reseach_Northwest_Patents7">
+        <div class="row g-5">
+            <div class="col">
+                <p class="mb-5"><b>Abstract:</b> Cortical bone thickness is assumed to be a major factor regulating
+                    miniscrew stability. We investigated stress distribution in two miniscrews with different thread
+                    shapes (type A and B) and in cortical bone of three different thicknesses using three-dimensional
+                    (3D) finite element (FE) models. More specifically, 3D FE models of two different miniscrews were
+                    created and placed obliquely or vertically into a cylindrical bone model representing different
+                    cortical bone thicknesses. When force was applied to the miniscrew, the stress distribution on the
+                    screw surface and in the peri-implant bone was assessed using FE methodology. Miniscrew safety was
+                    evaluated using a modified Soderberg safety factor. Screw head displacement increased with a
+                    decrease in cortical bone thickness, irrespective of screw type. The smallest minimum principal
+                    stresses on the screw surfaces remained constant in type A miniscrews on changes in cortical bone
+                    thickness. Minimum principal stresses also appeared on the cortical bone surface. Lower absolute
+                    values of minimum principal stresses were seen in type A miniscrews when placed vertically and with
+                    upward traction in obliquely placed type B miniscrews. Both miniscrews had acceptable safety factor
+                    values. Taken together, orthodontists should select and use the suitable miniscrew for each patient
+                    in consideration of bone properties. </p>
+
+                <p class="mb-4"><b>Methods:</b>In the present study, we adopted two different titanium miniscrews with
+                    the same screw length and diameter: type A (AbsoAnchor, SH1615-07; Dentos Ltd., Daegu, South Korea)
+                    and type B (B-max Screw, Type-TK; BIODENT Co., Tokyo, Japan) miniscrews. Both miniscrews were made
+                    of titanium alloy (6AL-4V ELI) and had a screw length of 7.0 mm and a screw diameter of 1.6 mm. The
+                    yield stress of the titanium alloy was reported to be 755 MPa, and the fatigue endurance limit was
+                    412.5 MPa31.
+
+                    The type A miniscrew had a shaft length of 5.5 mm (the pitch and depth of a traditional thread with
+                    a buttress reverse thread shape), with a taper of 1.30°. Micro-computed tomographic (CT) images were
+                    acquired with a cubic voxel of 5 μm3, and serial images of 845 consecutive slices were used to
+                    reconstruct the 3-D surface model using a CT modeler (Toshiba IT & Control Systems Co., Tokyo,
+                    Japan); 3-D finite elemental models of the type A miniscrew were constructed from the segmental
+                    images.
+
+                    The type B miniscrew had a shaft length of 5.2 mm, a pitch of 0.5 mm, a depth of 0.2 mm, and a taper
+                    of 2.0°. The screw thread was characterized according to a 35° proximal half angle and a 10° distal
+                    half angle; 3-D FE models of the type B miniscrews were created using computer-aided design data
+                    provided by BIODENT Co., Ltd.
+
+                    The peri-implant bone model had a cylindrical shape. It consisted of cortical bone and cancellous
+                    bone layers. Three peri-implant bone models were created to represent cortical bone thicknesses of
+                    1.5 mm, 2.0 mm, and 3.0 mm, and cancellous bone thicknesses of 5.5 mm, 5.0 mm, and 4.0 mm,
+                    respectively (Fig. 1). The miniscrew models were placed to a depth of 5.5 mm. These miniscrew models
+                    were constructed to represent screw placement orientations of 0° (vertical direction) and 30°
+                    (oblique direction) against the cortical bone surface (Fig. 1). Twelve models were meshed with delta
+                    cone tetrahedrons representing the cortical and cancellous bones using HyperWorks software (Altair
+                    Engineering, Troy, MI, USA).</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="research_information">
+
+        <div class="research_img"><img src="img/research11.webp" alt="Research_img"></div>
+        <div class="research_content">
+            <div class="name_research">
+                <p> AI-based automatic segmentation of craniomaxillofacial anatomy from CBCT scans for automatic
+                    detection of pharyngeal airway evaluations in OSA patients</p>
+            </div> <br>
+            <div class="name_author">
+                <p>Obstructive sleep apnea (OSA) is identified by periods of partial or complete upper airway disruption
+                    during sleep. OSA patients can breathe normally when they are awake but the disruptions occur since
+                    those patients cannot preserve the pharyngeal airway space when they sleep1,2. OSA patients who do
+                    not receive any treatment may have hypertension, heart failure, stroke, and premature death3. OSA
+                    patients are unavailable to preserve the pharyngeal airway space when they sleep, however, they can
+                    breathe normally when they are awake2,3.</p>
+                <div>
+                    <button class="button_reserch" onclick="detail_8()">See More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container hiddenContent" id="reseach_Northwest_Patents8">
+        <div class="row g-5">
+            <div class="col">
+                <p class="mb-5"><b>Abstract:</b> TThis study aims to generate and also validate an automatic detection
+                    algorithm for pharyngeal airway on CBCT data using an AI software (Diagnocat) which will procure a
+                    measurement method. The second aim is to validate the newly developed artificial intelligence system
+                    in comparison to commercially available software for 3D CBCT evaluation. A Convolutional Neural
+                    Network-based machine learning algorithm was used for the segmentation of the pharyngeal airways in
+                    OSA and non-OSA patients. Radiologists used semi-automatic software to manually determine the airway
+                    and their measurements were compared with the AI. OSA patients were classified as minimal, mild,
+                    moderate, and severe groups, and the mean airway volumes of the groups were compared. The narrowest
+                    points of the airway (mm), the field of the airway (mm2), and volume of the airway (cc) of both OSA
+                    and non-OSA patients were also compared. There was no statistically significant difference between
+                    the manual technique and Diagnocat measurements in all groups (p > 0.05). Inter-class correlation
+                    coefficients were 0.954 for manual and automatic segmentation, 0.956 for Diagnocat and automatic
+                    segmentation, 0.972 for Diagnocat and manual segmentation. Although there was no statistically
+                    significant difference in total airway volume measurements between the manual measurements,
+                    automatic measurements, and DC measurements in non-OSA and OSA patients, we evaluated the output
+                    images to understand why the mean value for the total airway was higher in DC measurement. It was
+                    seen that the DC algorithm also measures the epiglottis volume and the posterior nasal aperture
+                    volume due to the low soft-tissue contrast in CBCT images and that leads to higher values in airway
+                    volume measurement.
+
+                </p>
+
+
+                <p class="mb-4-lg-7"><b>Approach</b> To handle large volume sizes on a reasonably fine scale, we
+                    approach this task with a coarse-to-fine approach. In general, a coarse-to-fine framework performs
+                    an inference at successively finer scales. The approach uses the results from the previous coarser
+                    stages to guide and speed up inference at the finer stages. A coarse-to-fine framework allows to
+                    achieve high-quality segmentation masks while being efficient during inference.
+
+                    In this model, we use a two-stage coarse-to-fine approach. Both stages are defined as semantic
+                    segmentation tasks but at different voxel scales. At the first (coarse) stage, the whole volume is
+                    analyzed at once in a single forward pass through the neural network. During this stage, the model
+                    operates in coarse resolution of scale 1 mm. The goal of this stage is to perform a coarse
+                    segmentation of anatomical structures in a computationally efficient manner. </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="container hiddenContent" id="reseach_Northwest_Patents5">
+        <div class="row g-5">
+            <div class="col">
+                <p class="mb-5"><b>Materials and methods:</b>
+                    Four electronic boards with temperature sensors were encapsulated in mouthguards made from
+                    ethylene-vinyl acetate (EVA). The error and time to reach steady-state temperature were determined
+                    using a thermostatic water bath during three different conditions (34, 38.5 and 43 °C).
+                    Subsequently, a case study of one volunteer wearing the instrumented mouthguard is presented. </p>
+                <p class="mb-4-lg-7"><b>Results:</b> The water bath tests showed that a mean absolute error of 0.2 °C
+                    was reached after a maximum of 690 s across all test conditions. The case study yielded an absolute
+                    error was 0.2 °C after 1110 s.</p>
+                <p class="mb-4-lg-7"><b>Conclusions:</b>These results show that an instrumented mouthguard with
+                    temperature sensing capabilities can yield a consistent steady-state error that is close to the
+                    clinical requirements across a range of temperatures. However, the time it takes to reach
+                    steady-state temperature needs to be considered for these systems to correctly interpret the
+                    outcomes. </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="email" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Site Map</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="service.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="contact.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                        <a class="text-light mb-2" href="abum.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Abum Customers</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#header-carousel"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#service"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#pricingplan"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Pricing Plan</a>
+                        <a class="text-light mb-2" href="#riviewcustomer"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Riview Customer</a>
+                        <a class="text-light mb-2" href="#ourdentist"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Our Dentist</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>8A, Ton That Thuyet, Nam Tu Liem, Ha
+                        Noi</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i
+                                class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

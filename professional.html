@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Belleville Dental</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/yorbalindadental-logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<script>
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    jcount = eval(cookieVal("jaafarCounter"))
+    jcount++
+    document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+        thisCookie = document.cookie.split("; ")
+        for (i = 0; i < thisCookie.length; i++) {
+            if (cookieName == thisCookie[i].split("=")[0]) {
+                return thisCookie[i].split("=")[1]
+            }
+        }
+        return 0
+    }
+
+    function page_counter() {
+        for (i = 0; i < (6 - jcount.toString().length); i++)
+            document.write('<span class="counter">0</span>')
+        for (y = 0; y < (jcount.toString().length); y++)
+            document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
+    }
+
+</script>
+<body>
+    <div id="preloader">
+        <div id="status" >&nbsp;</div>
+      </div>
+
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><span>   <b class="view"><i class="bi bi-eye"></i>
+                        <SCRIPT>page_counter(jcount);</SCRIPT>
+                    </b></span><i class="far fa-clock text-primary me-2"></i><span id="hvn"></span> / Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open mailto:me-2"></i>bellevilledental@gmail.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Belleville Dental</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="professional.html" class="nav-item nav-link">Professional</a>
+                <a href="patient.html" class="nav-item nav-link">Patient</a>
+                <a href="research.html" class="nav-item nav-link">Research</a>
+                <a href="products.html" class="nav-item nav-link">Product</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Professional</h1>
+                <a href="index.html" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="products.html" class="h4 text-white">Professional</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5" id="ourdentist">
+        <div class="container">
+          <div class="section-title mb-5">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Professional</h5>
+            <h1 class="display-5 mb-0">Oral Health Education</h1>
+          </div>
+          <div class="patient-content">
+            <div class="col-lg-12"></div>
+              <div class="row g-5">
+                <div class="col-md-4 service-item wow zoomIn" data-wow-delay="0.6s">
+                  <div class="rounded-top overflow-hidden">
+                    <img class="img-fluid" src="img/yorbalindadental-logo.png" alt="" width="70%" height="206">
+                  </div>         
+                
+          </div>
+          <div class=" col-md-8 position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+            <h4>Belleville Dental</h4>
+            <hr class="text-primary w-50 mx-auto mt-0">
+            <div class="d-flex justify-content-between mb-3"><span>All the news about studying abroad</span><i class="fa fa-check text-primary pt-1"></i></div>
+            <div class="d-flex justify-content-between mb-3"><span>Articles about studying abroad in Four directions</span><i class="fa fa-check text-primary pt-1"></i></div>
+            <div class="d-flex justify-content-between mb-2"><span>The focus of the four directions discipline</span><i class="fa fa-check text-primary pt-1"></i></div>
+        </div>
+    </div>
+</div>
+<div> <br>
+    <h2 class="position-relative d-inline-block text-primary text-uppercase">Dentistry: What to study, where to study and career opportunities</h2> <br>
+    <p>The increasing demand for orthodontics as well as dental care in today's modern life makes dentistry a very popular choice for young people who want to pursue medicine. In this article, Hotcourses Vietnam will introduce to those of you who are interested in medicine in general and have a special interest in the dental industry, complete information about this discipline as well as the future career in this field.</p> <br>
+    <h4 style="color: rgb(254, 144, 9);"> <b> Overview of dental specialties</b></h4>
+    <p>Dentistry specializes in the study, diagnosis, prevention and treatment of diseases related to teeth and oral cavity such as jawbone, gums, fascia, facial bones and cheeks. Students studying dentistry will be equipped with knowledge about oral hygiene, diseases of dental infections, orthodontic techniques and practice on methods of replacing dentures, restoring teeth, crowns, orthodontics orthodontics. Some of the jobs of a dentist can be mentioned as braces, replacement of dentures, endodontic adjustments such as tooth decay, tartar, tooth extraction. In addition, depending on the specialty, learners need to have a good understanding of how to prescribe drugs and also complex jobs such as surgery, anesthesia, and transplantation. </p>
+    <p>The dental training majors that students can choose from include:    </p>
+    <ul>
+        <li>Orthodontic         </li>
+        <li>Dental care        </li>
+        <li>Dental Restoration        </li>
+        <li>Orthodontic orthodontics        </li>
+        <li>Orthopedic X-ray of the mouth        </li>        
+        <li>Dental surgery        </li>
+        <li>Pediatric Dentistry        </li>
+        <li>Community Health Dentistry        </li>
+    </ul>
+    <h4 style="color: rgb(254, 144, 9);">Structure of the dental discipline    </h4>
+    <p>If you want to become a professional dentist, the first thing you need to do is study for a bachelor's degree in dentistry. This is the most popular level that dental students choose. The length of study is usually 4 years depending on the school and the field you pursue. During your studies, to gain more hands-on experience you will be able to attend some laboratory classes as part of the course requirements.  </p>
+        
+            <div style="text-align: center ;background-color: aliceblue;" class="col-12 service-item wow zoomIn" data-wow-delay="0.6s">
+                <div class="rounded-top overflow-hidden">
+                  <img class="img-fluid" src="img/nhakhoa.webp" alt="" style="width: 45% ;">
+                </div>  
+            </div> <br>
+    <p>After graduating from university, you can work in hospitals and dental clinics. Those who wish to pursue further study in dentistry can take postgraduate courses. Some universities will require 2 to 3 years of experience for you to enter the graduate level. A number of international universities now offer Master of Orthodontic Science or Master of Dental Science courses , which usually last 2-3 years.</p>
+    <h4 style="color: rgb(254, 144, 9);">Where to study dentistry?</h4>
+        <p>With the demand to study and work in the country, the leading universities of Medicine and Pharmacy in Vietnam all have dental specialties in big cities such as: Hanoi - Hai Phong - Hue - Ho Chi Minh - Can Tho, .... In addition, you also have many choices with universities abroad that have the following high-quality Dental - Jaw - Facial programs recommended by Hotcourses Vietnam:</p>
+    <h5 style="color: rgb(255, 171, 103) ;">Australia:    </h5>
+    <ul>
+        <a href="https://www.hotcourses.vn/study/course/australia/bachelor-of-oral-health/54866094/program.html"><li>The University of Adelaide (UoA)         </li></a>
+        <a href="https://www.hotcourses.vn/study/australia/school-college-university/university-of-western-australia/888/international.html"><li>The University of Western Australia (UWA)</li></a>
+        <a href="https://www.hotcourses.vn/study/course/australia/bachelor-of-oral-health-cb29/57142746/program.html"><li>CQUniversity Australia</li></a>
+    </ul>
+    <h5 style="color: rgb(255, 171, 103) ;">Canada:    </h5>
+    <ul>
+        <a href="https://www.hotcourses.vn/study/course/canada/advanced-diploma-of-dental-hygiene/57052598/program.html"><li>Fanshawe College</li></a>
+        <a href="https://www.hotcourses.vn/study/course/canada/dental-office-administration-program-s115/58142462/program.html"><li>Georgian College</li></a>
+        <a href="https://www.hotcourses.vn/study/course/canada/dental-office-administration-program-s115/58142462/program.html"><li>George Brown College</li></a>
+    </ul>
+    <h5 style="color: rgb(255, 171, 103) ;">America:    </h5>
+    <ul>
+        <a href="https://www.hotcourses.vn/usa/"><li>University of Pittsburgh</li></a>
+        <a href="https://www.hotcourses.vn/study/course/us-usa/bachelor-of-science-dental-hygiene-education-specialist/54603458/program.html"><li>College of Southern Nevada </li></a>
+        <a href="https://www.hotcourses.vn/usa/"><li>San Mateo Colleges of Silicon Valley</li></a>
+    </ul>
+    <p>If you are interested in studying dentistry in advanced and developed countries with international qualifications, contact <a href="contact.html">experienced IDP study abroad experts who are always ready to support and advise </a> completely free of charge.</p>
+    <h4 style="color: rgb(254, 144, 9);">Dental career opportunities    </h4>
+    <p>These days, in addition to skin and hair, teeth are a factor that many people care about, so dentists are now a "money-making" profession. According to a BBC survey, the income level of doctors operating in the Dental - Jaw - Facial industry is often higher than other professions in the medical field.</p>
+    <div style="text-align: center ;background-color: aliceblue;" class="col-12 service-item wow zoomIn" data-wow-delay="0.6s">
+        <div class="rounded-top overflow-hidden">
+          <img class="img-fluid" src="img/profess1.webp" alt="" style="width: 45% ;">
+        </div>  
+    </div> <br>
+    <p>Fresh graduates can work in dental clinics, dental clinics, hospitals or non-governmental organizations. When you have accumulated enough experience and want to be more proactive in your work, you can open a private dental clinic by yourself.</p>
+    <h5 style="color: rgb(255, 171, 103) ;">Some of the official jobs associated with this discipline are:    </h5>
+    <ul>
+    <li>Dentist</li>
+    <li>Assistant to monitor, take care of teeth</li>
+    <li>Dental Restoration Specialist</li>
+    <li>Dental technician</li>
+    </ul>
+    <i class="fa fa-check text-primary pt-1"></i><a href="https://www.hotcourses.vn/study/training-degrees/international/dentistry-courses/cgory/h2-3/sin/ct/programs.html">Medical and health courses</a> <br>
+    <i class="fa fa-check text-primary pt-1"></i><a href="https://www.hotcourses.vn/study/international-scholarships/all/qn/health-and-medicine/cid/qid/h/scholarship.html">Medicine - Pharmacy Scholarship</a> <br>
+    <h4 style="color: rgb(254, 144, 9);">Interesting things you may not know if you pursue dentistry </h4>
+    <h5 style="color: rgb(81, 178, 253) ;">Not only learning knowledge about teeth</h5>
+    <p>Although dentistry is primarily concerned with the study of teeth, there are a number of other subjects covered in the course. For example, you will learn the basics of human disease, drug dosing, health psychology and the basics of the physics involved in dental materials. The course covers a variety of topics that can be applied to understanding dentistry and improving patient care.</p>
+    <h5 style="color: rgb(81, 178, 253) ;">Right handedness is an advantage    </h5>
+    <p>Dentists, dental nurses, and dental hygienists who perform the examination of patients using a dental chair must be right-handed. The reason is that the current domestic dental machine chairs are designed for the right-hand side, most of which are fixed and do not adjust to the opposite side. Although there are dental machines designed specifically for left-handed people in the world, they are not always fully equipped at training institutions or medical facilities, unless it is a clinic. of me. Therefore, if you cannot practice using tools with your right hand, you should consider overcoming them.</p>
+    <div style="text-align: center ;background-color: aliceblue;" class="col-12 service-item wow zoomIn" data-wow-delay="0.6s">
+        <div class="rounded-top overflow-hidden">
+          <img class="img-fluid" src="img/profess2.jpeg" alt="" style="width: 45% ;">
+        </div>  
+    </div> <br>
+    <h5 style="color: rgb(81, 178, 253) ;">Meticulousness and precision are never superfluous</h5>
+    <p>Dental work requires skills in the use of sharp tools and in the patient's oral cavity. It can be seen that the dental assistants / dentists are people who "have the mind of a doctor and the hands of an engineer". Especially with specialized in dental prosthetic techniques, creating dentures is usually quite small in millimeters, porcelain filling, plastic grinding, ... all require certain meticulousness and ingenuity. In addition, when conducting an examination for a patient, the dentist needs to focus to perform correctly to avoid unpredictable consequences. There are problems that should not only be based on experience but also based on the plan, x-ray of the patient's jaw such as extraction of teeth 6,7,8 or wisdom teeth.       </p>
+    <h5 style="color: rgb(81, 178, 253) ;">Application of Artificial Intelligence (AI) in dentistry</h5>
+    <p>Current dental treatment is not based solely on a thorough examination and analysis of existing patient data. With the development of smart technology, AI has now been introduced into this field with many purposes such as supporting decision making in orthodontics, detecting caries, surveying and diagnosing diseases. periodontitis, even recommending treatment plans. With the support from Artificial Intelligence, the quality of diagnosis and treatment is increasingly improved, in parallel with the level of customer satisfaction.</p>
+    <h4 style="color: rgb(254, 144, 9);">Books Can't miss</h4>
+    <div class="patient-content">
+        <div class="col-lg-12"></div>
+          <div class="row g-5">
+            <div class="col-md-4 service-item wow zoomIn" data-wow-delay="0.6s">
+              <div class="rounded-top overflow-hidden">
+                <a href="http://dental.downloadmedicalbook.com/18404/orthodontic-treatment-of-impacted-teeth.html"><img class="img-fluid" src="img/book2.jpeg" alt="" width="100%" style="height:470px ;"></a>
+              </div>
+              <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+                <h4>Orthodontic Treatment</h4>
+                <hr class="text-primary w-50 mx-auto mt-0">
+                <div class="d-flex justify-content-between mb-3"><span>Orthodontics</span></div>
+                <div class="d-flex justify-content-between mb-3"><span>Impacted Teeth</span></div>
+                <div class="d-flex justify-content-between mb-2"><span>Posted on may 20, 2022 by DMB</span></div>
+            </div>
+              </div>
+              <div class="col-md-4 service-item wow zoomIn" data-wow-delay="0.6s">
+                <div class="rounded-top overflow-hidden">
+                  <a href="http://dental.downloadmedicalbook.com/18410/dental-implants-for-hygienists-and-therapists.html"><img class="img-fluid" src="img/book1.jpeg" alt="" width="100%" style="height:470px ;" ></a>
+                </div>
+                <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+                    <h4>Dental Implants Book</h4>
+                    <hr class="text-primary w-50 mx-auto mt-0">
+                    <div class="d-flex justify-content-between mb-3"><span>Deltal nursing assisting</span></div>
+                    <div class="d-flex justify-content-between mb-3"><span>Hygienists and Therapists </span></div>
+                    <div class="d-flex justify-content-between mb-2"><span>Posted on may 20, 2022 by DMB</span></div>
+                </div>
+                </div>
+              <div class="col-md-4 service-item wow zoomIn" data-wow-delay="0.9s">
+                <div class="rounded-top overflow-hidden">
+                  <a href="http://dental.downloadmedicalbook.com/18407/peri-implant-therapy-for-the-dental-hygienist.html"><img class="img-fluid" src="img/book3.jpeg" alt="" width="100%"style="height:470px ;"></a>
+                </div>
+                <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+                    <h4>Peri-Implant Therapy</h4>
+                    <hr class="text-primary w-50 mx-auto mt-0">
+                    <div class="d-flex justify-content-between mb-3"><span>Deltal nursing and assisting</span></div>
+                    <div class="d-flex justify-content-between mb-3"><span>Dental Hygienist</span></div>
+                    <div class="d-flex justify-content-between mb-2"><span>Posted on may 20, 2022 by DMB</span></div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="email" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Site Map</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                        <a class="text-light mb-2" href="abum.html"><i class="bi bi-arrow-right text-primary me-2"></i>Abum Customers</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#header-carousel"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#service"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#pricingplan"><i class="bi bi-arrow-right text-primary me-2"></i>Pricing Plan</a>
+                        <a class="text-light mb-2" href="#riviewcustomer"><i class="bi bi-arrow-right text-primary me-2"></i>Riview Customer</a>
+                        <a class="text-light mb-2" href="#ourdentist"><i class="bi bi-arrow-right text-primary me-2"></i>Our Dentist</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary mailto:me-2"></i>bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Belleville Dental</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/yorbalindadental-logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<script>
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    jcount = eval(cookieVal("jaafarCounter"))
+    jcount++
+    document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+        thisCookie = document.cookie.split("; ")
+        for (i = 0; i < thisCookie.length; i++) {
+            if (cookieName == thisCookie[i].split("=")[0]) {
+                return thisCookie[i].split("=")[1]
+            }
+        }
+        return 0
+    }
+
+    function page_counter() {
+        for (i = 0; i < (6 - jcount.toString().length); i++)
+            document.write('<span class="counter">0</span>')
+        for (y = 0; y < (jcount.toString().length); y++)
+            document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
+    }
+
+</script>
+<body>
+    <div id="preloader">
+        <div id="status" >&nbsp;</div>
+      </div>
+
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><span>   <b class="view"><i class="bi bi-eye"></i>
+                        <SCRIPT>page_counter(jcount);</SCRIPT>
+                    </b></span><i class="far fa-clock text-primary me-2"></i><span id="hvn"></span> / Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open mailto:me-2"></i>bellevilledental@gmail.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Belleville Dental</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="professional.html" class="nav-item nav-link">Professional</a>
+                <a href="patient.html" class="nav-item nav-link">Patient</a>
+                <a href="research.html" class="nav-item nav-link">Research</a>
+                <a href="products.html" class="nav-item nav-link">Product</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Dental Implant</h1>
+                <a href="index.html" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="service.html" class="h4 text-white">Our Service</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="productaccordion_child">
+        <div class="product-images">
+            <img src="img/pexels-photo-3779701.jpeg"
+                alt="service-image" class="imgservice">
+        </div>
+
+        <div class="service_information" style="margin-top:100px ;">
+            <h1>Dental Implant</h1>
+            <h2>The Price:199$</h2>
+            <p>
+                Dental Implant is a technique to restore a lost tooth by implanting an Implant post into the jaw bone to make a false tooth root. <br>Currently, Bel Dental is one of the TOP units applying the most prestigious and quality-guaranteed implant technology in the market. Coming to us, you will be able to use professional services at extremely competitive and preferential prices, ensuring absolute satisfaction for you.         </p>
+            <a href="appointment.html" class="btn btn-dark py-3 px-5 me-3">Appointment</a>
+        </div>
+    </div>
+    <section class="testimonials">
+        <div class="container" style="text-align:center ;background-color: rgb(201, 201, 201);">
+            <h2 style="margin: 2% ;" class="position-relative d-inline-block text-primary text-uppercase">step-by-step process</h2>
+    
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="customers-testimonials" class="owl-carousel" style="margin: -12% 0px 0px 0px;">
+                <div class="item product_information">
+                  <div class="shadow-effect">
+                    <img class="img-circle" src="img/buoc11.jpeg" alt="">
+                    <h2>Step 1</h2>
+                    <p>Taking Panorama film is an indispensable step in the initial examination stage. Based on the number of missing teeth, the health of the teeth, the condition of the jawbone, the position to be implanted, the doctor will discuss with the customer to come up with the most suitable route and briefly talk about the advanced method of tooth transplantation. Advance Implant.</p>
+                  </div>
+                </div>
+                <div class="item product_information">
+                  <div class="shadow-effect">
+                    <img class="img-circle" src="img/buoc22.jpeg" alt="" >
+                    <h2>Step 2</h2>
+                    <p>
+                        Then, the missing tooth position is opened and the appropriate size titanium post is slowly placed into the position of the jawbone. This stage is completed, the doctor will close the stitch so that most customers do not feel any discomfort at all.</p>
+                  </div>
+                </div>
+                <div class="item product_information">
+                  <div class="shadow-effect">
+                    <img class="img-circle" src="img/buoc33.jpeg" alt="">
+                    <h2>Step 3</h2>
+                    <p>Usually, customers who perform Implant placement need to return for a follow-up examination as directed by a specialist. Especially 7 days after surgery is the most important milestone. At this time, the doctor will remove the sutures and check the progress of the surgery. 
+                    </p>
+                  </div>
+                </div>
+                <div class="item product_information">
+                    <div class="shadow-effect">
+                      <img class="img-circle" src="img/buoc44.jpeg" alt="">
+                      <h2>Step 4</h2>
+                      <p>When ensuring that the jawbone and the Implant post have achieved perfect compatibility, the doctor will place the healing post. Next, the client proceeds to take impressions of the molars . This porcelain crown is designed to look like the real thing to achieve the expected aesthetic. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item product_information">
+                    <div class="shadow-effect">
+                      <img class="img-circle" src="img/buoc55.jpeg" alt="">
+                      <h2>Step 5</h2>
+                      <p>The last step plays an important role, that is, the doctor will carry out the extraction of gum tissue and attach the Abutment joint to the position of the Implant post with a screw. Abutment has the role of supporting new teeth, ensuring aesthetic function and chewing as usual.   
+                      </p>
+                    </div>
+                  </div>
+            
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <h2 style="margin: 4% 0px 2% 35% ;text-align: center;" class="position-relative d-inline-block text-primary text-uppercase">Frequently Asked Questions</h2>
+        <div class="container">
+            <dl>
+              <dt>1.How is the dental implant procedure done?</dt>
+              <dd>          
+                <p>For any period of dental restoration, it is necessary to undergo the first examination and Implant teeth are no exception. The dentist will examine the patient's oral health in general.</p>
+          
+              </dd>
+          
+              <dt>2. What are the benefits of Dental Implant technique?</dt>
+              <dd>          
+                <p>It is no coincidence that the dental implant method is so popular and appreciated. In fact, the implant procedure has brought many outstanding results as follows</p>
+          
+              </dd>
+          
+              <dt>3.Reasons to go to an address with a standard Implant procedure</dt>
+              <dd>          
+                <p>Leading experts recommend that customers visit and implant dental implants at quality facilities with a methodical implementation process for the following reasons</p>
+          
+              </dd>
+          
+            </dl>
+          </div>
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="email" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Site Map</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                        <a class="text-light mb-2" href="abum.html"><i class="bi bi-arrow-right text-primary me-2"></i>Abum Customers</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#header-carousel"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#service"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#pricingplan"><i class="bi bi-arrow-right text-primary me-2"></i>Pricing Plan</a>
+                        <a class="text-light mb-2" href="#riviewcustomer"><i class="bi bi-arrow-right text-primary me-2"></i>Riview Customer</a>
+                        <a class="text-light mb-2" href="#ourdentist"><i class="bi bi-arrow-right text-primary me-2"></i>Our Dentist</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i
+                                class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>

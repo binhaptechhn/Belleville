@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Belleville Dental</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/yorbalindadental-logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+</head>
+<script>
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    jcount = eval(cookieVal("jaafarCounter"))
+    jcount++
+    document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+        thisCookie = document.cookie.split("; ")
+        for (i = 0; i < thisCookie.length; i++) {
+            if (cookieName == thisCookie[i].split("=")[0]) {
+                return thisCookie[i].split("=")[1]
+            }
+        }
+        return 0
+    }
+
+    function page_counter() {
+        for (i = 0; i < (6 - jcount.toString().length); i++)
+            document.write('<span class="counter">0</span>')
+        for (y = 0; y < (jcount.toString().length); y++)
+            document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
+    }
+
+</script>
+<body>
+    <div id="preloader">
+        <div id="status" >&nbsp;</div>
+      </div>
+
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><span>   <b class="view"><i class="bi bi-eye"></i>
+                        <SCRIPT>page_counter(jcount);</SCRIPT>
+                    </b></span><i class="far fa-clock text-primary me-2"></i><span id="hvn"></span> / Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open mailto:me-2"></i>bellevilledental@gmail.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Belleville Dental</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="professional.html" class="nav-item nav-link">Professional</a>
+                <a href="patient.html" class="nav-item nav-link">Patient</a>
+                <a href="research.html" class="nav-item nav-link">Research</a>
+                <a href="products.html" class="nav-item nav-link">Product</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Dental Knowledge</h1>
+                <a href="index.html" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">Dental Knowledge</a>
+            </div>
+        </div>
+    </div>
+    <div class="section-title mb-4" id="aboutus" style="margin-left: 6%;">
+        <h5 class="position-relative d-inline-block text-primary text-uppercase">About Dental Knowledge</h5>
+    </div>
+    <h1 style="text-align:center;color: #06A3DA;">Purulent gums: Causes and treatment of purulent roots</h1>
+    <div class="img-DentalKnowledge">
+        <img src="img/nha-khoa.jpg" alt="nuou-rang-co-mu">
+    </div>
+    <p style="color:black;font-size: 20px;padding: 0 10%;">
+        <b> Purulent gums </b> are one of the most common oral
+        diseases today. In addition to pain, pus-filled gums in the long run will lead to tooth loss, blood infection,
+        ... extremely dangerous. So if we encounter this unfortunate situation, what should we do?
+    </p>
+    <div id="toc_container" class="toc_light_blue no_bullets">
+        <p class="toc_title">
+            Main Content
+            <span class="toc_toggle">
+                <button id="button_hide" onclick="hide()">
+                    [hide]
+                </button>
+            </span>
+        </p>
+        <ul id="toc_list" style="display:block;">
+            <li><a href="#concept">What is purulent gingivitis?</a></li>
+            <li><a href="#reason">Causes of purulent gums</a>
+                <ul>
+                    <li>
+                        <a href="#dental_disease">Patient is suffering from dental disease
+                            mouth</a>
+                    </li>
+                    <li>
+                        <a href="#symptoms">Due to complications of wisdom teeth</a>
+                    </li>
+                    <li>
+                        <a href="#periodontitis">Due to periodontitis can not
+                            Thorough treatment</a>
+                    </li>
+                    <li>
+                        <a href="#Improper_cleaning">Not paying attention to the
+                            protection process
+                            Correct dental birth</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#treatment_way">How to treat purulent gums?</a>
+                <ul>
+                    <li>
+                        <a href="#mild_stage">Treatment of purulent gums stage
+                            light</a>
+                    </li>
+                    <li>
+                        <a href="#severe_stage">Treatment of purulent gums stage
+                            serious</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#Prevention">How to prevent purulent gums effectively</a></li>
+        </ul>
+    </div>
+    <div id="container" style="font-weight: 400;">
+        <h2 id="concept"> 
+            <b>What is purulent gingivitis?</b>
+        </h2>
+        <p>
+            <b>Gums with pus</b>It is a condition in which the gums surrounding the tooth socket form a pocket of
+            colored
+            pus
+            white. The density of the white pus pocket on the gums depends on the inflammation the patient has. This is
+            consequences of patients with gum infections that are subjectively not treated early.
+        </p>
+        <div id="attachment_5638" style="width: 810px" class="wp-caption aligncenter">
+            <img src="./img/nuou-rang-co-mu.jpg" alt="">
+        </div>
+        <p>
+            Sign of<b>purulent gum disease</b>usually very obvious and recognizable:
+        </p>
+        <ul>
+            <li>
+                <p>When there is purulent gingivitis, the gums will be swollen, dark red or pinkish red.</p>
+            </li>
+            <li>
+                <p>Gums are very sensitive and bleed when brushing, flossing or eating hard foods</p>
+            </li>
+            <li>
+                <p>Appearance of white pus pockets between teeth and gums</p>
+            </li>
+            <li>
+                <p>The patient has worn neck teeth, receding gums, wobbly</p>
+            </li>
+            <li>
+                <p>The mouth has an unpleasant odor due to the decomposition of bacteria</p>
+            </li>
+            <li>
+                <p>
+                    In cases where the gums are severely swollen with pus, the patient may have a blood infection,
+                    affecting the
+                    serious to health.
+                </p>
+            </li>
+        </ul>
+        <h2 id="reason">
+            Causes of gum disease pus 
+        </h2>
+        <p>
+            Knowing the cause of <b>swollen gums</b> will help each of us to master
+            Actively monitor their oral health status and promptly prevent dangerous complications. Dental
+            Tan Dinh Department has summarized the main causes of swollen and pus-filled gums as follows:
+        </p>
+        <h5 id="dental_disease">
+            Patient is suffering from diseases dental
+        </h5>
+        <p>
+            Chipped, traumatized, or decayed teeth can affect the pulp, causing infection. If it's okay
+            If treated early, there will be no accumulation of pus between the teeth and gums, also known as a root
+            abscess.
+        </p>
+        <h5 id="symptoms">
+            Due to complications of wisdom teeth
+        </h5>
+        <p>
+            According to statistics, the percentage of patients who come to Tan Dinh Dental Clinic to treat swollen gums
+            pus related complications of wisdom teeth are quite high. If wisdom teeth are misaligned, crossed, hidden or
+            covered
+            Gum filling can also lead to pus formation in the gums.
+        </p>
+        <h5 id="periodontitis">
+            Is it due to periodontal disease?thoroughly treated
+        </h5>
+        <p>
+            If periodontitis is not treated subjectively, it will progress to the pus-forming gum stage. So if
+            Patients who are suffering from periodontitis should immediately go to a reputable dental clinic to be
+            treated, to avoid complications of purulent discharge
+            gums.
+        </p>
+        <div id="attachment_5637" style="width: 810px" class="wp-caption aligncenter">
+            <img src="./img/nuou-rang-co-mu-2.jpg" alt="">
+        </div>
+        <h5 id="Improper_cleaning">
+            Don't pay too much attention Proper dental hygiene
+        </h5>
+        <p>
+            Improper oral hygiene is one of the leading causes of inflammation
+            The root of the tooth has more white pus. When cleaning teeth, absolutely do not use too hard brushes,
+            toothpicks
+            teeth or brush teeth vigorously because these will contribute to creating conditions for bacteria to enter
+            the affected gum area
+            damage.
+        </p>
+        <h2 id="treatment_way">>How to treat gums pus
+        </h2>
+        <p>
+            Depending on the stage of disease development, the doctor will offer appropriate treatment solutions,
+            help us quickly get rid of gingivitis:
+        </p>
+        <h5 id="mild_stage">
+            Treatment of purulent gums stage light
+        </h5>
+        <p>
+            At this stage, the doctor will prescribe some antibiotics against swelling and inflammation in combination
+            with the removal of tartar to remove bacteria that cause gingivitis. Along with that, the patient needs to
+            follow a regimen
+            Scientific oral care as follows:
+        </p>
+        <ul>
+            <li>
+                <p>Gargle with salt water or dental mouthwash to disinfect and reduce swelling</p>
+            </li>
+            <li>
+                <p>Use a soft-bristled toothbrush to gently brush your teeth to avoid hurting your gums</p>
+            </li>
+            <li>
+                <p>Eat soft foods, not too hot or too cold</p>
+            </li>
+            <li>
+                <p>Limit sour, spicy, salty foods because they easily irritate the gums.</p>
+            </li>
+            <li>
+                <p>Add foods rich in vitamin A and vitamin C</p>
+            </li>
+        </ul>
+        <div id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="./img/nuou-rang-co-mu-3.jpg" alt="">
+        </div>
+        <h5 id="severe_stage">
+           Treatment of purulent gums serious passage
+        </h5>
+        <p>
+            First, the doctor will proceed to remove tartar hidden deep under the gums. If gum swelling is caused by
+            an
+            impacted wisdom tooth,
+            The doctor will advise removing wisdom teeth combined with anti-inflammatory antibiotics.
+        </p>
+        <p>
+            For extensive gingivitis, the doctor must surgically remove the damaged periodontal part
+            love. Then, if necessary, the doctor will add an extra gum flap to keep the tooth from moving, leading
+            to
+            risk
+            early tooth loss.
+        </p>
+        <h5 id="Prevention">
+            How to treat purulent gums?
+        </h5>
+        <p>
+            <b>Purulent gingivitis</b>is a rather dangerous disease, so we need to be prepared
+            knowledge to prevent and prevent disease from occurring. To prevent purulent gum disease, the first
+            thing
+            The first and most important thing is that each patient absolutely must not be subjective with diseases
+            such
+            as periodontitis, impacted wisdom teeth, gums
+            boss… These diseases need to be treated as soon as possible.
+        </p>
+        <div id="attachment_5635" style="width: 810px" class="wp-caption aligncenter">
+            <img src="./img/nha-khoa.jpg" alt="">
+        </div>
+        <p>
+            👉Pay attention to proper oral hygiene, brush your teeth twice a day with a soft bristle brush
+            It is advisable to use dental floss and mouthwash after eating.
+        </p>
+        <p>
+            👉 Building a diet rich in vitamins and minerals combined with a healthy lifestyle,
+        </p>
+        <p> 👉 Regular exercise to strengthen resistance.</p>
+        <p>
+            👉 Changing the habit of using toothpicks or using carbonated and acidic drinks will harm tooth enamel.
+        </p>
+        <p>
+            👉 In particular, it is necessary to build a habit of going to the dentist every 6 months for timely
+            detection.
+            the damage on his teeth.
+        </p>
+        <p>
+            Hopefully the above article will provide you with useful information about the problem
+            <b>purulent gums</b>. Besides treatment, prevention is a very important factor
+            need to pay attention to good oral care and properly.
+        </p>
+        <p>
+            If you need more detailed information, do not hesitate to contact Belleville Dental immediately for a
+            consultation
+            The fastest and most accurate query.
+        </p>
+        <ul>
+            <li>
+                <p><b>Address:</b>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi
+                </p>
+            </li>
+            <li>
+                <p><b>Website:</b><a href="index.html">Belleville Dental</a>
+                </p>
+            </li>
+            <li>
+                <p><b>Email:</b>Bellevilledental@gmail.com</a></p>
+            </li>
+            <li>
+                <p><b>Hotline:</b>012 345 67890</p>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="email" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4 ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Site Map</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                        <a class="text-light mb-2" href="abum.html"><i class="bi bi-arrow-right text-primary me-2"></i>Abum Customers</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#header-carousel"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#service"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#pricingplan"><i class="bi bi-arrow-right text-primary me-2"></i>Pricing Plan</a>
+                        <a class="text-light mb-2" href="#riviewcustomer"><i class="bi bi-arrow-right text-primary me-2"></i>Riview Customer</a>
+                        <a class="text-light mb-2" href="#ourdentist"><i class="bi bi-arrow-right text-primary me-2"></i>Our Dentist</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

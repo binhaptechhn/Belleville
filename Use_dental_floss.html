@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Belleville Dental</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/yorbalindadental-logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<script>
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    jcount = eval(cookieVal("jaafarCounter"))
+    jcount++
+    document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+        thisCookie = document.cookie.split("; ")
+        for (i = 0; i < thisCookie.length; i++) {
+            if (cookieName == thisCookie[i].split("=")[0]) {
+                return thisCookie[i].split("=")[1]
+            }
+        }
+        return 0
+    }
+
+    function page_counter() {
+        for (i = 0; i < (6 - jcount.toString().length); i++)
+            document.write('<span class="counter">0</span>')
+        for (y = 0; y < (jcount.toString().length); y++)
+            document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
+    }
+
+</script>
+<body>
+    <div id="preloader">
+        <div id="status" >&nbsp;</div>
+      </div>
+
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><span>   <b class="view"><i class="bi bi-eye"></i>
+                        <SCRIPT>page_counter(jcount);</SCRIPT>
+                    </b></span><i class="far fa-clock text-primary me-2"></i><span id="hvn"></span> / Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open mailto:me-2"></i>bellevilledental@gmail.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Belleville Dental</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="professional.html" class="nav-item nav-link">Professional</a>
+                <a href="patient.html" class="nav-item nav-link">Patient</a>
+                <a href="research.html" class="nav-item nav-link">Research</a>
+                <a href="products.html" class="nav-item nav-link">Product</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Dental Knowledge</h1>
+                <a href="index.html" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">Dental Knowledge</a>
+            </div>
+        </div>
+    </div>
+    <div class="section-title mb-4" id="aboutus" style="margin-left: 3%;">
+        <h5 class="position-relative d-inline-block text-primary text-uppercase"style="margin-left: 3%;">About Dental Knowledge</h5>
+    </div>
+    <h1 style="text-align:center;color: #06A3DA">Purulent gums: Causes and treatment of purulent roots</h1>
+    <div class="img-dental-floss">
+        <img src="img/chi-nha-khoa4.jpg" alt="">
+    </div>
+    <p style="color:black;font-size: 20px;padding: 0 10%;">
+        <b> Flossing </b> is considered one of the effective tools to help remove plaque that is harmful to oral health.
+        However, many people still overlook and do not care about using dental floss correctly, making them unable
+        to maximize their "miracle" power. Don't worry, the following article will guide you on how to use
+        standard-no-correction floss from a professional. Follow up now!
+    </p>
+    <div id="toc_container" class="toc_light_blue no_bullets">
+        <p class="toc_title">Main Content
+            <span class="toc_toggle"><button id="button_hide" onclick="hide()">[hide]</button></span>
+        </p>
+        <ul id="toc_list" style="display:block;">
+            <li><a href="#concept">What is dental floss?</a></li>
+            <li><a href="#function">The effect of dental floss</a>
+                <ul>
+                    <li><a href="#clean_plaque">1. Clean food plaque</a></li>
+                    <li><a href="#avoid_respiratory_disease">2. Stay away from respiratory diseases</a></li>
+                    <li><a href="#avoid_heart_disease">3. Prevention of cardiovascular disease</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#user_manual">
+                    Instructions on how to use dental floss correctly way
+                </a>
+            </li>
+            <li>
+                <a href="#note">Some things to keep in mind when using floss
+                    department</a>
+            </li>
+        </ul>
+    </div>
+    <div id="container" style="font-weight: 400;">
+        <p> <b>Dental floss</b>is the invention of Levi Spear Parmly - an American
+            dentist in the 20th century 19. After being patented and put into production, the product is recommended
+            by dentists <strong>to use
+                widely used</strong>.
+        </p>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/chi-nha-khoa-2.jpg">
+        </div>
+        <h2 id="concept">
+          What is dental floss?  
+        </h2>
+        <p>
+            <b>Dental floss (or dental floss)</b>is thin, tough thread, made from
+            nylon or plastic in a sterile environment. In addition, the product is also impregnated with <a
+                href="https://en.wikipedia.org/wiki/Ch%E1%BA%A5t_kh%C3%A1ng_en_sinh_v%E1%BA%ADt" target="_blank"
+                rel="noopener noreferrer">antibiotics</a>, triclosan, fermentation inhibitors, etc. are beneficial
+            for the process
+            <strong>cleans teeth</strong> and ensures effective <strong>sterilization</strong>.
+        </p>
+        <p>Dental floss comes in two types, single and multifilament. With a single
+            strand, it will be tough
+            than, usually coated with smooth wax, penetrates more easily between teeth. On the market of dental
+            floss
+            Usually sold in rolls or in the form of toothpicks, in order to make it easy for users to use and carry
+            around
+            me.
+        </p>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/chi-nha-khoa-1.jpg">
+        </div>
+        <h2 id="function">
+         The effect of dental floss   
+        </h2>
+        <h5 id="clean_plaque">
+            1. Clean food plaque
+        </h5>
+        <p>
+            We often know that Ha Khoa floss is used <strong>to clean plaque </strong> , food residues clinging
+            to the roots of teeth and gums,small, deep, difficult interdental areas, and at the same time help
+            <strong>
+                reverse the symptoms of swollen gums. , yellow teeth
+                and bad odor
+            </strong>
+            in the oral cavity.
+        </p>
+        <p>
+            Especially for those who are using the method of
+            <a href="https://nhakhoatandinh.com/nieng-rang-o-dau-tot-tphcm/" target="_blank"
+                rel="noopener noreferrer">braces
+            </a> with brackets, using dental floss will help you
+            <strong>clean your teeth more easily and effectively </strong>
+            without shaking or moving the brackets.orthodontic process.
+        </p>
+        <h5 id="avoid_respiratory_disease">
+            2. Stay away from respiratory diseases
+        </h5>
+        <p>
+            The second use to mention is to help us<strong>
+                stay away from respiratory disease
+            </strong>.
+            Leftover food stuck in the mouth for a long time is an ideal
+            environment for bacteria that cause respiratory diseases to multiply and develop.
+            From here, the bacterial foci gradually spread, causing sore
+            throat, red mouth sores, and worse, leading to pharyngitis, tonsillitis and bronchitis.
+            Thanks to dental floss, the oral cavity will be kept clean,
+            bacteria no longern have the opportunity to "disturb".
+        </p>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/chi-nha-khoa.jpg">
+        </div>
+        <h5 id="avoid_heart_disease">
+            3. Prevention of cardiovascular disease
+        </h5>
+        <p>
+            Another use of floss that will surprise you is <strong>the prevention of cardiovascular
+                disease</strong> . The area
+            of the teeth and gums contains a lot of nerves, and they transmit to every corner of the body,
+            then focus on the heart. Imagine if you let the nasopharynx become inflamed, infected, these
+            bacteria can completely penetrate through the bloodstream, infecting the blood and carrying
+            pathogens that affect your heart.
+        </p>
+        <p>
+            Dental floss is also an effective tool to <strong>help diabetics</strong> avoid some dangerous
+            complications.
+            Patients with diabetes often have weak resistance, so they easily encounter infection problems,
+            which hinder the treatment process and greatly affect their lives. Maintaining oral hygiene will
+            contribute to creating a filter to prevent excess bacteria from entering, causing infection for the
+            patient.
+        </p>
+        <h2 id="user_manual">
+          Instructions on how to use dental floss correctly  
+        </h2>
+        <p>
+            To fully promote the use of dental floss, you need to know how to use it correctly and strictly follow
+            the following steps:
+        </p>
+        <ul>
+            <li><b>
+                    Step 1:</b>
+                Use a toothbrush to clean your teeth after eating.
+            </li>
+            <li><b> Step 2:</b>
+                Cut a piece of floss from 30-50 cm long, roll it on two
+                index fingers so that there is an excess of 4-6cm and stretch.You will move the thread that goes between
+                the teeth,
+                gently moving from the top down, gently swirling in the root area and pulling the leftover
+                food and plaque out.You alternately release a piece of clean thread from one index finger, and use the
+                other index finger to retract the corresponding thread so that the new thread is always kept tight and
+                clean.
+                You continue to repeat the operation until all the teethare cleaned.
+                </span></li>
+            <li><b> Step 3:</b>
+                Use pre-mixed mouthwash or use salt water to clean again.
+                This will help you fight bacteria in your mouth.
+            </li>
+        </ul>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/chi-nha-khoa-4.jpg">
+        </div>
+        <h2 id="note">
+            Some things to keep in mind when using dental floss
+        </h2>
+        <p>
+            When you first start using dental floss, you should do gentle manipulations , avoid using strong
+            pulling force only between teeth, or pressing hard on the gum wall, this will cause damage to the
+            gums, leading to swelling. and bleeding.
+        </p>
+        <p>
+            You should not use a piece of floss to clean all between your teeth. Saving in the wrong place will cause
+            bacteria to move from one area to another, causing damage to teeth and gums.
+        </p>
+        <p>
+            The first time you use it, you may bleed because you are not used to it, you should not be too worried to
+            give up. This is a normal situation because our gums have not yet adapted to this new friend.
+        </p>
+        <p>
+            Another note when using dental floss is that you need to choose the type that is only suitable for your
+            needs, has quality and has a clear origin to ensure your oral health.
+        </p>
+        <p>Cheap and convenient is what you usually think of dental floss. Now you can see more uses of this thread in
+            protecting oral health in particular and body health in general.
+        </p>
+        <p>
+            Dental floss is truly a reliable "companion". With just a small thread, it can help us repel plaque, limit
+            odors, tooth decay, yellow teeth, and bring confidence in communication. Using floss correctly will help you
+            have a beautiful smile, strong teeth and a healthy body.
+        </p>
+        <p>Use dental floss today to protect oral health!</p>
+        <p>
+            If you need more detailed information, do not hesitate to contact Belleville Dental immediately for a
+            consultation
+            The fastest and most accurate query.
+        </p>
+        <ul>
+            <li>
+                <p><b>Address:</b>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi
+                </p>
+            </li>
+            <li>
+                <p><b>Website:</b><a href="index.html">Belleville Dental</a>
+                </p>
+            </li>
+            <li>
+                <p><b>Email:</b>Bellevilledental@gmail.com</a></p>
+            </li>
+            <li>
+                <p><b>Hotline:</b>012 345 67890</p>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="email" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4 ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Site Map</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                        <a class="text-light mb-2" href="abum.html"><i class="bi bi-arrow-right text-primary me-2"></i>Abum Customers</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#header-carousel"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#service"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#pricingplan"><i class="bi bi-arrow-right text-primary me-2"></i>Pricing Plan</a>
+                        <a class="text-light mb-2" href="#riviewcustomer"><i class="bi bi-arrow-right text-primary me-2"></i>Riview Customer</a>
+                        <a class="text-light mb-2" href="#ourdentist"><i class="bi bi-arrow-right text-primary me-2"></i>Our Dentist</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

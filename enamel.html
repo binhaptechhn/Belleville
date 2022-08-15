@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Belleville Dental</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/yorbalindadental-logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<script>
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    jcount = eval(cookieVal("jaafarCounter"))
+    jcount++
+    document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+        thisCookie = document.cookie.split("; ")
+        for (i = 0; i < thisCookie.length; i++) {
+            if (cookieName == thisCookie[i].split("=")[0]) {
+                return thisCookie[i].split("=")[1]
+            }
+        }
+        return 0
+    }
+
+    function page_counter() {
+        for (i = 0; i < (6 - jcount.toString().length); i++)
+            document.write('<span class="counter">0</span>')
+        for (y = 0; y < (jcount.toString().length); y++)
+            document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
+    }
+
+</script>
+<body>
+    <div id="preloader">
+        <div id="status" >&nbsp;</div>
+      </div>
+
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><span>   <b class="view"><i class="bi bi-eye"></i>
+                        <SCRIPT>page_counter(jcount);</SCRIPT>
+                    </b></span><i class="far fa-clock text-primary me-2"></i><span id="hvn"></span> / Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open mailto:me-2"></i>bellevilledental@gmail.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Belleville Dental</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="professional.html" class="nav-item nav-link">Professional</a>
+                <a href="patient.html" class="nav-item nav-link">Patient</a>
+                <a href="research.html" class="nav-item nav-link">Research</a>
+                <a href="products.html" class="nav-item nav-link">Product</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Dental Knowledge</h1>
+                <a href="index.html" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">Dental Knowledge</a>
+            </div>
+        </div>
+    </div>
+    <div class="section-title mb-4" id="aboutus" style="margin-left: 6%;">
+        <h5 class="position-relative d-inline-block text-primary text-uppercase"style="margin-left: 3%;">About Dental Knowledge</h5>
+    </div>
+    <h1 style="text-align:center;color: #06A3DA; margin-left: 6%;">What is tooth enamel? 5 effective ways to weak tooth enamel
+    </h1>
+    <div class="img-dental-floss">
+        <img src="img/men-rang.jpg" alt="">
+    </div>
+    <p style="color:black;font-size: 20px;padding: 0 10%;">
+        From the outside, your teeth look healthy. But weak enamel can still make your oral health worse. Strong enamel
+        is one of the most important factors for comprehensive oral care. Therefore, the protection of tooth enamel is
+        very necessary to protect comprehensive oral health.
+    </p>
+    <div id="toc_container" class="toc_light_blue no_bullets">
+        <p class="toc_title">Main Content
+            <span class="toc_toggle"><button id="button_hide" onclick="hide()">[hide]</button></span>
+        </p>
+        <ul id="toc_list" style="display:block;">
+            <li><a href="#concept">What is tooth enamel?</a></li>
+            <li><a href="#cause">Reasons for weak tooth enamel</a>
+                <ul>
+                    <li>
+                        <a href="#internal_cause">Caused by the impact of elements inside the body</a>
+                    </li>
+                    <li>
+                        <a href="#habit_cause">The reason is due to the influence of daily life</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#signal">
+                    Warning signs of weak tooth enamel</a>
+                <ul>
+                    <li>
+                        <a href="#white_spots">Teeth appear milky white spots</a>
+                    </li>
+                    <li>
+                        <a href="#chills">Teeth appear painfully sensitive</a>
+                    </li>
+                    <li>
+                        <a href="#bong">Teeth falling out when eating hard food</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#overcome">5 ways to fix weak tooth enamel </a>
+                <ul>
+                    <li>
+                        <a href="#tooth_enamel_remover_food">Avoid foods and drinks that demineralize tooth enamel</a>
+                    </li>
+                    <li>
+                        <a href="#mineral_supplement">Use a mineral supplement</a>
+                    </li>
+                    <li>
+                        <a href="#brush_teeth">Brush your teeth properly</a>
+                    </li>
+                    <li>
+                        <a href="#diet">Building a diet rich in compensated minerals</a>
+                    </li>
+                    <li>
+                        <a href="#periodic_examination">Regular dental check-ups as recommended by the dentist </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="container" style="font-weight: 400;">
+        <h2 id="concept" >
+           What is tooth enamel? 
+        </h2>
+        <p >
+            Enamel is the outermost layer and covers the outside of the teeth. This is
+            the hardest component in the human body. Enamel gives color to teeth, makes teeth stronger and protects
+            dentin and pulp. Enamel is pale yellow, gray-white. And sometimes it has a bluish tint on the edge of
+            the teeth.
+        </p>
+        <p >
+            Tooth enamel contains the highest mineral content in the human body. The enamel layer contains up to 96%
+            mineral salts. The rest is a little organic matter and water. Tooth enamel is an arrangement of long thin
+            calcium phosphate crystals. This enamel is very difficult to break or rub. The biggest weakness of the
+            enamel layer is that it is gradually eroded in an acidic environment. If the enamel is worn away, it cannot
+            be restored.
+        </p>
+        <div  id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/men-rang-1.jpg">
+        </div>
+        <p >
+            The enamel thickness on the crown is not uniform. In which, the thickest position at the tip of the
+            tooth is 2.5 mm. The location with the thinnest enamel layer is in the cervical region. The thickness of
+            this glaze is also influenced by genetic factors. Parents with unhealthy tooth enamel also pass it on to
+            their children. That makes the enamel of your baby's teeth thinner and weaker than usual.
+        </p>
+        <p >
+            Thanks to enamel, dentin and pulp are protected from bacteria, heat and external forces. It helps us eat
+            easier to chew, especially tough foods.
+        </p>
+        <h2 id="cause"  >
+            Reasons for weak tooth enamel 
+        </h2>
+        <h5 id="internal_cause" >
+           Caused by the impact of elements inside the body
+        </h5>
+        <ul>
+            <li >
+                <a href="https://vi.wikipedia.org/wiki/Kh%C3%B4_mi%E1%BB%87ng" target="_blank"
+                    rel="noopener noreferrer"><span style="color: #0000ff;">Dry mouth</span></a>
+                due to underactive salivary glands, acid from food residue. It is one of the causes of tooth enamel
+                wear.
+            </li>
+            <li >
+                Oral diseases such as tooth decay or periodontitis, etc., create conditions for bacteria to attack tooth
+                enamel and weaken tooth enamel.
+            </li>
+            <li >
+                Gastrointestinal diseases such as gastroesophageal reflux disease, congenital genetic diseases such as
+                nutritional deficiencies, calcium deficiency, etc. can also cause enamel to wear down.
+            </li>
+        </ul>
+        <div  id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/men-rang-yeu.jpg">
+        </div>
+        <h5 id="habit_cause" >
+            The reason is due to the influence of daily life
+        </h5>
+        <ul>
+            <li >
+                Failure to do regular oral hygiene or improper oral hygiene. That will cause excess food to form solid
+                plaque on the teeth. It allows bacteria to attack tooth enamel.
+            </li>
+            <li >
+                The habit of brushing teeth is also one of the causes of tooth enamel wear. You should brush your teeth
+                vertically to avoid wearing down the neck and enamel.
+            </li>
+            <li >
+                Habit of grinding teeth, the impact of chipping teeth are also mechanical effects that cause open enamel
+                and dentin.
+            </li>
+            <li >
+                Diets high in carbohydrates, sugars, and acids also weaken tooth enamel.
+            </li>
+        </ul>
+        <h2  id="signal" >
+           Warning signs of weak tooth enamel 
+        </h2>
+        <h5  id="white_spots" >
+                Teeth appear milky white spots
+        </h5>
+        <p>
+            White spots can be caused by bacteria that convert plaque into acids, reversing the substances in tooth
+            enamel. Or it can also be caused by an excess of fluoride in the body, leading to the appearance of milky
+            white spots on the surface of the teeth.
+        </p>
+        <p>
+            If the patient sees this mark on the tooth surface without treatment, very quickly bacteria create white
+            spots. It will cause severe tooth decay or other diseases such as inflammation of the tissues, gums, etc.
+        </p>
+        <div  id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/dom-trang-duc.jpg">
+        </div>
+        <h5 id="chills">
+            Teeth appear painfully sensitive
+        </h5>
+        <p>
+
+        <p>
+            The condition of teeth appearing sensitive is mainly caused by damaged enamel layer. It is possible that the
+            starting point is due to oral diseases that affect tooth enamel. It may be due to poor oral care and
+            personal hygiene. It allows bacteria to attack tooth enamel.
+        </p>
+        <p>
+            However, the cause of enamel damage can also be caused by an accident or by a strong impact. It causes tooth
+            enamel to be lost or chipped.
+        </p>
+        <p>When the enamel is damaged, the dentin is exposed and when eating, the food will irritate the dentin causing
+            sensitivity and discomfort.
+        </p>
+        <h5 id="bong">
+            Teeth falling out when eating hard food
+        </h5>
+        <p>
+            When you eat hard foods, the thin, sensitive enamel that covers your teeth can peel off, which is a sign
+            that enamel is weakened and is very vulnerable. Even slight impacts can seriously affect tooth enamel.
+        </p>
+        <p>
+            When you see the above signs, do not hesitate but go to the dentist immediately to be examined by a doctor,
+            determine the cause and take timely treatment measures, avoiding affecting your health for long-term healthy
+            teeth.
+        </p>
+        <h2 id="overcome">
+               5 ways to fix weak tooth enamel 
+        </h2>
+        <h5 id="tooth_enamel_remover_food">
+                Avoid foods and drinks that demineralize tooth enamel
+        </h5>
+        <div  id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/thuc-pham-lam-hong-men-rang.jpg">
+        </div>
+        <p>
+            Fermented carbohydrates, found in candies, cookies, soft drinks, breads, crackers, bananas, and many sugary
+            breakfast cereals, combine with bacteria in the mouth to create harmful acids, those acids. This disrupts
+            the structure of tooth enamel.
+        </p>
+        <p>This process is called demineralization because the acid "eats away" the minerals that are produced naturally
+            in your tooth enamel. In general, sugary foods and candies can demineralize your enamel over time, and that
+            happens if you don't brush your teeth properly. The acid produced by these foods will stick to your teeth
+            after eating.
+        </p>
+        <h5 id="mineral_supplement">
+                Use a mineral supplement
+        </h5>
+        <p>
+            One of the best preventive steps you can take is to consistently use products that contain mineral
+            supplements. Fluoride supplements are one of the best ways to strengthen tooth enamel. Drink fluoridated
+            water and consult your dentist about the fluoride found in toothpastes, mouthwashes, and fluoride
+            treatments.
+        </p>
+        <h5 id="brush_teeth">
+                Brush your teeth properly
+        </h5>
+        </p>
+        <p>
+            If you feel uncomfortable brushing or eating, it's best to make an appointment with your dentist right away.
+            But brushing too hard or brushing with a stiff bristle brush can damage enamel. To keep your enamel healthy,
+            keep these tips in mind:
+        </p>
+        <ul>
+            <li >
+                Brush your teeth at least twice a day with a soft-bristled toothbrush.
+            </li>
+            <li >
+                Position your brush at a 45-degree angle when brushing and move the brush briefly and firmly.
+            </li>
+            <li >
+                For a thorough clean, brush your teeth for at least two minutes at a time.
+            </li>
+            <li >
+                Clean all areas of your mouth, including your tongue, to remove the bacteria that normally reside here.
+            </li>
+        </ul>
+        <div  id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/danh-rang.jpg">
+        </div>
+        <p>
+            Saliva, secreted after brushing, can also compensate and correct demineralization. Containing minerals and
+            proteins that help protect your enamel from cavities, saliva continuously washes away germs from your teeth
+            even when you're not paying attention.
+        </p>
+        <h5 id="diet">
+                Building a diet rich in compensated minerals
+        </h5>
+        <p>
+            According to the University of California-Berkeley, you may be surprised to learn that tooth decay can occur
+            if your enamel is weakened over a long period of time, and this is quite a problem for modern humans. The
+            modern diet since the Industrial Revolution has played a large part in the increased incidence of tooth
+            decay.
+        </p>
+        <div  id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/an-rau-xanh.jpg">
+        </div>
+        <ul>
+            <li >
+                Seed
+            </li>
+            <li >
+                Fruits and vegetables
+            </li>
+            <li >
+                Protein rich foods
+            </li>
+            <li >
+                Low-fat dairy products
+            </li>
+        </ul>
+        <p>
+            According to research from the National Institutes of Health (NIH), certain foods, like cheese, have been found to inhibit the demineralization process of teeth. Cheese promotes saliva production, which helps maintain the pH level in your mouth, while inhibiting acid production. Celery – a vegetable that contains a lot of water – can also maintain the amount of saliva in the mouth, rebuilding soft tooth enamel.
+        </p>
+        <h5 id="periodic_examination">
+              Regular dental check-ups as recommended by the dentist
+        </h5>
+              
+        <p>
+            In addition to ways to restore enamel at home, it is extremely important to visit the dentist for regular
+            dental check-ups and cleanings. You should see your dentist at least 2 or more times a year depending on the
+            state of your teeth and current enamel. Regular dental check-ups and cleanings will protect your enamel and
+            keep your teeth healthy
+        </p>
+        <div  id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/kham-rang.jpg">
+        </div>
+        <p>
+            Here are some effective ways to fix weak tooth enamel. Hopefully through the above sharing of Tan Dinh
+            Dental Clinic will help you always keep yourself a beautiful healthy teeth and a sunny smile.
+        </p>
+
+        <p>
+            If you need more detailed information, do not hesitate to contact Belleville Dental immediately for a
+            consultation
+            The fastest and most accurate query.
+        </p>
+        <ul>
+            <li>
+                <p><b>Address:</b>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi
+                </p>
+            </li>
+            <li>
+                <p><b>Website:</b><a href="index.html">Belleville Dental</a>
+                </p>
+            </li>
+            <li>
+                <p><b>Email:</b>Bellevilledental@gmail.com</a></p>
+            </li>
+            <li>
+                <p><b>Hotline:</b>012 345 67890</p>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="email" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4 ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Site Map</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                        <a class="text-light mb-2" href="abum.html"><i class="bi bi-arrow-right text-primary me-2"></i>Abum Customers</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#header-carousel"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#service"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#pricingplan"><i class="bi bi-arrow-right text-primary me-2"></i>Pricing Plan</a>
+                        <a class="text-light mb-2" href="#riviewcustomer"><i class="bi bi-arrow-right text-primary me-2"></i>Riview Customer</a>
+                        <a class="text-light mb-2" href="#ourdentist"><i class="bi bi-arrow-right text-primary me-2"></i>Our Dentist</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

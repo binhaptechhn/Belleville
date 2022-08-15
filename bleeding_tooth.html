@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Belleville Dental</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/yorbalindadental-logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<script>
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    jcount = eval(cookieVal("jaafarCounter"))
+    jcount++
+    document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+        thisCookie = document.cookie.split("; ")
+        for (i = 0; i < thisCookie.length; i++) {
+            if (cookieName == thisCookie[i].split("=")[0]) {
+                return thisCookie[i].split("=")[1]
+            }
+        }
+        return 0
+    }
+
+    function page_counter() {
+        for (i = 0; i < (6 - jcount.toString().length); i++)
+            document.write('<span class="counter">0</span>')
+        for (y = 0; y < (jcount.toString().length); y++)
+            document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
+    }
+
+</script>
+<body>
+    <div id="preloader">
+        <div id="status" >&nbsp;</div>
+      </div>
+
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><span>   <b class="view"><i class="bi bi-eye"></i>
+                        <SCRIPT>page_counter(jcount);</SCRIPT>
+                    </b></span><i class="far fa-clock text-primary me-2"></i><span id="hvn"></span> / Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open mailto:me-2"></i>bellevilledental@gmail.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Belleville Dental</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="professional.html" class="nav-item nav-link">Professional</a>
+                <a href="patient.html" class="nav-item nav-link">Patient</a>
+                <a href="research.html" class="nav-item nav-link">Research</a>
+                <a href="products.html" class="nav-item nav-link">Product</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Dental Knowledge</h1>
+                <a href="index.html" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">Dental Knowledge</a>
+            </div>
+        </div>
+    </div>
+    <div class="section-title mb-4" id="aboutus" style="margin-left: 10%;">
+        <h5 class="position-relative d-inline-block text-primary text-uppercase"style="margin-left: 3%;">About Dental Knowledge</h5>
+    </div>
+    <h1 style="text-align:center;color: #06A3DA;">7 Tips to treat bleeding gums at home are less expensive but effective
+    </h1>
+    <div class="img-dental-floss">
+        <img src="img/chay-mau-chan-rang-1.jpg" alt="">
+    </div>
+    <p style="color:black;font-size: 20px;padding: 0 10%;">
+        <b> Bleeding gums </b> is not a rare condition and many people are suffering from it for many different
+        reasons. It is also a whistle signaling that your teeth are having many problems such as gingivitis, abscesses
+        and many other dangerous diseases. But when faced with a natural and often bleeding tooth root, you will feel
+        extremely anxious, not knowing where to start and how to treat it. Just a few minutes reading the article below,
+        you will have more information on how to treat and prevent bleeding gums simply but effectively.
+    </p>
+    <div id="toc_container" class="toc_light_blue no_bullets">
+        <p class="toc_title">Main Content
+            <span class="toc_toggle"><button id="button_hide" onclick="hide()">[hide]</button></span>
+        </p>
+        <ul id="toc_list" style="display:block;">
+            <li><a href="#concept">What is bleeding gums?</a></li>
+            <li><a href="#reason">Reason</a></li>
+            <li>
+                <a href="#treatment">How to treat bleeding gums at home
+                    quickly</a>
+            </li>
+            <li>
+                <a href="#prevention">How to prevent bleeding gums</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="container" style="font-weight: 400;">
+        <h2 id="concept">
+           What is bleeding gums? 
+        </h2>
+        <p>
+            <span>Bleeding at the root of the tooth is a condition in which soft tissues such
+                as gums (gum), ligaments, and alveolar bone become congestive and leads to bleeding in areas at the root
+                of the tooth. This condition usually does not cause pain, bleeding is small and can stop on its own
+                after 1-2 minutes. If the tooth root is bleeding with pain, the gums are red and swollen, this is a sign
+                of a more serious disease such as a soft tissue infection, or an abscess, etc.
+            </span>
+        </p>
+        <div  id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/chay-mau-chan-rang-2.jpg">
+        </div>
+        <h2 id="reason">
+          Reason
+        </h2>
+        <p>
+            <b>Bleeding at the root of the tooth</b>can be due to many different causes.
+        </p>
+        <ul>
+            <li>
+                The first is to mention the damage caused by accidental impact when using a brush, toothpick, or
+                floss or by hitting hard objects, when chewing solid, sharp food.
+            </li>
+            <li>
+                Too much tartar causes the gums to become inflamed, red and swollen, which is also a cause of easy
+                bleeding.
+            </li>
+            <li>
+                Using dentures, orthodontic methods are not suitable or are in the process of treatment and
+                restoration.
+            </li>
+            <li> Hormonal disorders and lack of nutrients, especially
+                <a href="https://vi.wikipedia.org/wiki/Vitamin_C" target="_blank" rel="noopener noreferrer"> vitamin
+                    C </a>, also cause bleeding gums.
+            </li>
+            <li>
+                Some of the more dangerous and scary causes come from diseases such as diabetes, blood cancer,
+                leukemia and blood clotting disorders.
+            </li>
+        </ul>
+        <h2 id="treatment">
+           How to treat bleeding gums at home quickly 
+        </h2>
+        <p>
+            Bleeding in the root of the tooth in the mild stage or due to knowing the cause comes from impact
+            factors, you can completely fix it at home.
+        </p>
+        <ul>
+            <li>
+                You can use a clean gauze pad soaked in cold water or wrap an ice cube and place it on the bleeding
+                area, holding it tight until the bleeding stops.
+            </li>
+            <li>
+                Using tea bags soaked in cold water and applied to the bleeding root area also helps you to quickly
+                improve this situation.
+            </li>
+            <li>
+                Soaking in diluted warm salt water, or non-alcoholic mouthwash in the morning and evening will help
+                reduce inflammation in the gums, so that bleeding gums will also gradually disappear.
+            </li>
+            <li>
+                Honey and tea are also very good cures for this condition. You can mix a little honey into tea, suck
+                it for 2-3 minutes to relieve pain and disinfect.
+            </li>
+            <li>
+                Some Indian experts have studied and shown that using 1 lemon combined with eating 2 grams of garlic
+                per day will significantly improve.
+            </li>
+            <li>
+                Adding celery, fruits such as mango, guava, orange and grapefruit to the daily menu will form a
+                solid shield to prevent bleeding gums.
+            </li>
+            <li>
+                You can take more drugs such as antibiotics, anti-inflammatory and mineral supplements, calcium,
+                vitamins C, E, K, .... But you need to be careful not to abuse and absolutely follow the directions
+                of the pharmacist.
+            </li>
+        </ul>
+        <p>
+            If the condition does not improve, you need to see a dentist for proper and timely treatment.
+        </p>
+        <div  id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/chay-mau-chan-rang-3.jpg">
+        </div>
+        <h2 id="prevention">
+           How to prevent bleeding gums 
+        </h2>
+        <p>
+            “Prevention is better than cure”, this is an important step to help you break up this disease
+            quickly.through the bloodstream, infecting the blood and carrying
+            pathogens that affect your heart.
+        </p>
+        <p>
+            <strong>You should change your oral hygiene habits</strong>:use a soft-bristled toothbrush, brush
+            your teeth at least twice in the morning and evening, use dental floss to remove plaque, use an
+            antiseptic mouthwash daily.
+        </p>
+        <p><strong>Avoid biting and chewing hard and hard</strong>foods. You can break them into small pieces
+            with your hands before putting them in your mouth.
+        </p>
+        <p>
+            <strong>Drink enough water and eat lots of vegetables and fruits</strong> to help boost nutrients
+            and vitamin C for the body. As a result, the resistance is increased, against bacteria that cause
+            inflammation and bleeding gums.
+        </p>
+        <p>
+            <strong> Limit drinking alcohol, eating hot spicy foods</strong> , because this is the cause of bleeding
+            gums.
+        </p>
+        <p>
+            <strong>You need to get tartar periodically </strong> (6 months / time) to destroy the breeding environment
+            of
+            periodontal disease.
+        </p>
+        <p>With just a few simple steps, you can "discolor" the disease of bleeding teeth and protect your
+            health well.
+        </p>
+        <p>
+            <strong>Bleeding gums</strong> is not a rare or dangerous disease, but if you take it lightly and do not
+            know how to
+            treat and prevent it early, bleeding in the roots will cause more serious problems. You need to
+            build a reasonable oral hygiene routine, combine vitamin and mineral supplements to optimize the
+            treatment process.
+        </p>
+        <p>
+            If you need more detailed information, do not hesitate to contact Belleville Dental immediately for a
+            consultation
+            The fastest and most accurate query.
+        </p>
+        <ul>
+            <li>
+                <p><b>Address:</b>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi
+                </p>
+            </li>
+            <li>
+                <p><b>Website:</b><a href="index.html">Belleville Dental</a>
+                </p>
+            </li>
+            <li>
+                <p><b>Email:</b>Bellevilledental@gmail.com</a></p>
+            </li>
+            <li>
+                <p><b>Hotline:</b>012 345 67890</p>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="email" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4 ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Site Map</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                        <a class="text-light mb-2" href="abum.html"><i class="bi bi-arrow-right text-primary me-2"></i>Abum Customers</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#header-carousel"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#service"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#pricingplan"><i class="bi bi-arrow-right text-primary me-2"></i>Pricing Plan</a>
+                        <a class="text-light mb-2" href="#riviewcustomer"><i class="bi bi-arrow-right text-primary me-2"></i>Riview Customer</a>
+                        <a class="text-light mb-2" href="#ourdentist"><i class="bi bi-arrow-right text-primary me-2"></i>Our Dentist</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Belleville Dental</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/yorbalindadental-logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<script>
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    jcount = eval(cookieVal("jaafarCounter"))
+    jcount++
+    document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+        thisCookie = document.cookie.split("; ")
+        for (i = 0; i < thisCookie.length; i++) {
+            if (cookieName == thisCookie[i].split("=")[0]) {
+                return thisCookie[i].split("=")[1]
+            }
+        }
+        return 0
+    }
+
+    function page_counter() {
+        for (i = 0; i < (6 - jcount.toString().length); i++)
+            document.write('<span class="counter">0</span>')
+        for (y = 0; y < (jcount.toString().length); y++)
+            document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
+    }
+
+</script>
+<body>
+    <div id="preloader">
+        <div id="status" >&nbsp;</div>
+      </div>
+
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><span>   <b class="view"><i class="bi bi-eye"></i>
+                        <SCRIPT>page_counter(jcount);</SCRIPT>
+                    </b></span><i class="far fa-clock text-primary me-2"></i><span id="hvn"></span> / Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open mailto:me-2"></i>bellevilledental@gmail.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Belleville Dental</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="professional.html" class="nav-item nav-link">Professional</a>
+                <a href="patient.html" class="nav-item nav-link">Patient</a>
+                <a href="research.html" class="nav-item nav-link">Research</a>
+                <a href="products.html" class="nav-item nav-link">Product</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Dental Knowledge</h1>
+                <a href="index.html" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">Dental Knowledge</a>
+            </div>
+        </div>
+    </div>
+    <div class="section-title mb-4" id="aboutus" style="margin-left: 6%;">
+        <h5 class="position-relative d-inline-block text-primary text-uppercase"style="margin-left: 3%;">About Dental Knowledge</h5>
+    </div>
+    <h1 style="text-align:center;color: #06A3DA;">What is gingivitis? Which method helps to completely solve bossing
+        gingivitis?
+    </h1>
+    <div class="img-dental-floss">
+        <img src="img/viem-loi-trum.jpg" alt="">
+    </div>
+    <p style="color:black;font-size: 20px;padding: 0 10%;">
+        <b>Gingivitis</b> is a common dental disease related to the development of wisdom teeth. In some cases, gum
+        disease can
+        cause inflammation and pain for those who experience it. In this article,Belleville Dental Clinic will go into
+        detail to introduce you to the boss's gums and the definitive treatment for inflamed gums!
+    </p>
+    <div id="toc_container" class="toc_light_blue no_bullets">
+        <p class="toc_title">Main Content
+            <span class="toc_toggle"><button id="button_hide" onclick="hide()">[hide]</button></span>
+        </p>
+        <ul id="toc_list" style="display:block;">
+            <li><a href="#boss_profit">What is the boss profit?</a>
+                <ul>
+                    <li>
+                        <a href="#gingivitis">What is gingivitis?</a>
+                    </li>
+                    <li>
+                        <a href="#Purulent_gingivitis">Purulent gingivitis</a>
+                    </li>
+                    <li>
+                        <a href="#signal">Signs of purulent wisdom tooth gingivitis</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#treatments">Methods to treat inflamed gums</a>
+                <ul>
+                    <li>
+                        <a href="#antibiotics">Treat inflammation with antibiotics</a>
+                    </li>
+                    <li>
+                        <a href="#cut">Cut boss profit</a>
+                    </li>
+                    <li>
+                        <a href="#pluck">Wisdom tooth extraction</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#question">
+                    Questions about the treatment of purulent wisdom tooth gingivitis</a>
+                <ul>
+                    <li>
+                        <a href="#question1">Can gingivitis go away on its own?</a>
+                    </li>
+                    <li>
+                        <a href="#question2">Can cutting gums completely solve inflammation?</a>
+                    </li>
+                    <li>
+                        <a href="#question3">Gingivitis what to eat?</a>
+                    </li>
+                    <li>
+                        <a href="#question4">Foods to eat</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="container" style="font-weight: 400;">
+        <h2 id="boss_profit">
+            What is the boss profit?
+        </h2>
+        <p>
+            The gum is the part of the gum that covers the surface of the tooth. Gums can cover or partially cover a
+            tooth. Normally, when teeth erupt, this part of the gums will gradually disappear. However, in some cases,
+            this gum cover will cover the edema and hinder the development of the teeth. From there, they cause pain for
+            the patient. In the long run, when the teeth come in, push a part of the gum to create a space under the
+            gums. In this case, if you don't take care of your teeth and take care of them carefully, you will most
+            likely face inflamed and swollen gums.
+        </p>
+        <h5 id="gingivitis">
+            What is gingivitis?
+        </h5>
+        <p>
+            Gingivitis is known to be a form of disease mainly related to the development of wisdom teeth . The gum on
+            the wisdom tooth surface will cause an obstacle that prevents the wisdom tooth from growing in. The wisdom
+            teeth will continue to grow and pierce the gums, causing discomfort for the sufferer.
+
+            Often in the process of wisdom teeth eruption, you will face this situation many times. With some severe
+            cases of gingivitis, the gums are swollen, causing pain during eating.
+        </p>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/viem-loi-trum-la-gi.jpg">
+        </div>
+        <p>
+            Normally, if there is no bacteria attack, the gums will recover on their own after 3-4 days. But in some
+            cases, the inflamed gums can cause lasting pain. They can even give you a fever. In this case, you should
+            visit your dentist for advice and treatment.
+        </p>
+        <p>
+            Misaligned wisdom teeth are one of the causes of inflammation of the gums that cover the wisdom teeth. Learn
+            about this situation right away through the article: "What are the signs of wisdom teeth that are
+            misaligned? Should wisdom teeth be extracted?
+        </p>
+        <h5 id="Purulent_gingivitis">
+            Purulent gingivitis
+        </h5>
+        <p>
+            <b> Purulent gingivitis</b> is a bacterial infection that causes the gums to form a pus-filled capsule that
+            swells
+            the tissues around the crown and root of the tooth. The cause of this condition is that the leftover food is
+            stuck in the inflamed gums. The leftover food becomes an ideal environment for bacteria to nest and enter
+            the gums through the damage caused by the erupting wisdom teeth piercing the gums.
+        </p>
+        <p>
+            In this case, if not treated promptly, the bacteria will spread through the wound to the surrounding tissue.
+            From there, destroy these tissues, they can even damage teeth and jawbone in the worst case.
+        </p>
+        <h5 id="signal">
+            Here are some signs to help you distinguish between swollen gums caused by wisdom teeth and purulent gum
+            inflammation:
+        </h5>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/dau-hieu-viem-loi-trum-768x512.jpg">
+        </div>
+        <ul>
+            <li>
+                Red swollen gums: The gums covering the wisdom teeth are swollen and red. When pressing on the boss
+                gums, you will feel pain. Drainage and pus may be seen.
+            </li>
+            <li>
+                Toothache: for inflamed gums with pus, you will feel pain in the teeth. The pain will last for a long
+                time, even swallowing saliva or opening the mouth is painful. When the gums are severely inflamed, they
+                will cause inflammation around the crown and jaw
+            </li>
+            <li>
+                Fever and lymphadenopathy: when the gums are inflamed and pus-filled, you may have a fever. The angle of
+                the jaw is swollen and there are lymph nodes in the neck area. These are signs of an infection.
+            </li>
+            <li>
+                Drooling: The gums are inflamed and swollen, making it difficult for you to close your mouth as usual.
+                When you go to sleep, you will see the appearance of saliva flow and an unpleasant odor.
+            </li>
+        </ul>
+        <h2 id="treatments">
+            Methods to treat inflamed gums
+        </h2>
+        <p>
+            Depending on the inflammation of the gums, the doctor will give you individual treatment regimens. Here are
+            the methods used to treat gum inflammation. Let's consult Tan Dinh Dental Clinic about the methods!
+        </p>
+        <h5 id="antibiotics">
+            Treat inflammation with antibiotics
+        </h5>
+        <p>
+            In the case of swollen gums, redness, inflammation, when visiting the doctor, the doctor will examine and
+            disinfect the inflammation. You will then be prescribed antibiotics by your dentist. When the gums become
+            inflamed and pus-filled, the doctor will have to give you antibiotics to kill the bacteria. After the
+            gingiva is more inflamed and stable. Only then can we treat the inflamed gums thoroughly.
+        </p>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/dieu-tri-viem-loi-voi-khang-sinh.jpg">
+        </div>
+        <p>
+            Using antibiotics to treat gingivitis is considered a temporary solution to gingivitis. You will usually be
+            prescribed antibiotics for about 5 days. After 5-7 days, the boss benefits will gradually stabilize.
+            However, this is only a temporary solution to help cure gingivitis. Gingivitis may return. When using these
+            antibiotics will partly affect the stomach. So, if you have a history of stomach problems, don't forget to
+            tell your doctor!
+        </p>
+        <h5 id="cut">
+            Cut boss profit
+        </h5>
+        <p>
+            A gingivectomy is a minor surgery used in dentistry to remove the part of the gum that has grown over the
+            wisdom tooth. In the case of wisdom teeth growing straight, the dentist will perform this procedure. Cutting
+            gums will help free up space and create conditions for wisdom teeth to continue to grow.
+        </p>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/cat-loi-trum.jpg">
+        </div>
+        <p>
+            When performing a gingival cut, the dentist will clean the oral cavity and numb the part of the gums to be
+            removed. Then, the dentist will use a laser to cut the inside, the outside and remove the root of the gum.
+            Feeling pain, swelling and slight bleeding will be inevitable after cutting the boss gums. Therefore, you
+            should not worry too much about the post-surgery. Usually, after about 1-2 weeks, the gums will completely
+            recover.
+        </p>
+        <h5 id="pluck">
+            Wisdom tooth extraction
+        </h5>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/nho-rang-khon-768x441.jpg">
+        </div>
+        <p>
+            Tooth extraction is not known to be the most effective method for dealing with inflamed gums. Wisdom tooth
+            extraction will ensure that gingivitis does not return. Not only definitive treatment of gingivitis.
+            Removing wisdom teeth will help the jaw to have more space. This makes cleaning your teeth easier.
+            Therefore, wisdom tooth extraction is the method recommended by dentists in the treatment of inflamed gums.
+        </p>
+        <p>
+            Here are some ways to treat inflamed gums. In addition, to prevent inflammation, you should clean your teeth
+            carefully.
+        </p>
+        <h2 id="question">
+            Questions about the treatment of purulent wisdom tooth gingivitis
+        </h2>
+        <h5 id="question1">
+            Can gingivitis go away on its own?
+        </h5>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/viem-loi-trum-co-tu-khoi.jpg">
+        </div>
+        <p>
+            In case the gums are inflamed and slightly swollen for wisdom teeth to erupt. At the same time, the inflamed
+            gums are not infected, and the inflammatory gums can completely heal on their own after 3-4 days. However,
+            one thing is for sure, this gum will continue to swell and become inflamed again in the future. The reason
+            is, wisdom teeth will continue to grow. When the gum is partially exposed on the surface of the wisdom
+            tooth, this becomes an easy place for food to get stuck. From there, the bacteria will again cause
+            inflammation to this gum.
+        </p>
+        <h5 id="question2">
+            Can cutting gums completely solve inflammation?
+        </h5>
+        <p>
+            Minor gum surgery is not always 100% effective. This method will be recommended by dentists in cases where
+            wisdom teeth have grown almost completely. Also, you have no history of gingivitis.
+        </p>
+        <p  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/service-1.jpg">
+        </p>
+        <p>
+            You should remember that once you remove the boss benefits, they still have the ability to grow again. They
+            will continue to have the potential to bring dangerous complications such as: gingivitis, inflammation of
+            the body around the wisdom teeth, inflammation of the pulp ... Therefore, to minimize these complications,
+            the wisdom tooth extraction method is the the most effective method.
+        </p>
+        <h5 id="question3">Gingivitis what to eat?</h5>
+        <p>When the gums are inflamed, you should avoid some of the following foods to avoid worsening the inflammation
+            of the teeth:
+        </p>
+        <div  id="attachment_5636" style="width: 810px" class="wp-caption aligncenter">
+            <img src="img/thuc-pham-nen-kieng.jpg">
+        </div>
+        <ul>
+            <li>
+                Foods that contain a lot of sugar such as cakes, snacks, candies, etc.
+            </li>
+            <li>
+                Limit carbonated drinks: soft drinks, beer…
+            </li>
+            <li>
+                Do not use foods that are too hot or too cold.
+            </li>
+            <li>
+                Hot spicy foods: pepper, chili, mustard…
+            </li>
+            <li>
+                Preparations containing stimulants: coffee, tobacco, alcohol...
+            </li>
+        </ul>
+        <h5 id="question4">
+            Foods to eat
+        </h5>
+        <p>
+            White spots can be caused by bacteria that convert plaque into acids, reversing the substances in tooth
+            enamel. Or it can also be caused by an excess of fluoride in the body, leading to the appearance of milky
+            white spots on the surface of the teeth.
+        </p>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/thuc-pham-nen-an-khi-bi-viem-loi.jpg">
+        </div>
+        <ul>
+            <li>
+                Foods rich in fiber and vitamins: green vegetables, soft fruits such as avocado, banana ...
+            </li>
+            <li>
+                Green Tea: Green tea contains polyphenols. This is a substance with anti-inflammatory and antibacterial
+                properties.
+            </li>
+            <li>
+                Foods rich in calcium and other minerals such as meat, eggs, milk, etc.
+            </li>
+            <li>
+                Should eat soft foods in the form of porridge, soup ... This helps limit the impact on the inflamed
+                gums.
+            </li>
+        </ul>
+        <p>
+            If you need more detailed information, do not hesitate to contact Belleville Dental immediately for a
+            consultation
+            The fastest and most accurate query.
+        </p>
+        <ul>
+            <li>
+                <p><b>Address:</b>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi
+                </p>
+            </li>
+            <li>
+                <p><b>Website:</b><a href="index.html">Belleville Dental</a>
+                </p>
+            </li>
+            <li>
+                <p><b>Email:</b>Bellevilledental@gmail.com</a></p>
+            </li>
+            <li>
+                <p><b>Hotline:</b>012 345 67890</p>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="email" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4 ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Site Map</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                        <a class="text-light mb-2" href="abum.html"><i class="bi bi-arrow-right text-primary me-2"></i>Abum Customers</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#header-carousel"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#service"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#pricingplan"><i class="bi bi-arrow-right text-primary me-2"></i>Pricing Plan</a>
+                        <a class="text-light mb-2" href="#riviewcustomer"><i class="bi bi-arrow-right text-primary me-2"></i>Riview Customer</a>
+                        <a class="text-light mb-2" href="#ourdentist"><i class="bi bi-arrow-right text-primary me-2"></i>Our Dentist</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

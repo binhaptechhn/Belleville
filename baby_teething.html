@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Belleville Dental</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/yorbalindadental-logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<script>
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    jcount = eval(cookieVal("jaafarCounter"))
+    jcount++
+    document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+        thisCookie = document.cookie.split("; ")
+        for (i = 0; i < thisCookie.length; i++) {
+            if (cookieName == thisCookie[i].split("=")[0]) {
+                return thisCookie[i].split("=")[1]
+            }
+        }
+        return 0
+    }
+
+    function page_counter() {
+        for (i = 0; i < (6 - jcount.toString().length); i++)
+            document.write('<span class="counter">0</span>')
+        for (y = 0; y < (jcount.toString().length); y++)
+            document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
+    }
+
+</script>
+<body>
+    <div id="preloader">
+        <div id="status" >&nbsp;</div>
+      </div>
+
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><span>   <b class="view"><i class="bi bi-eye"></i>
+                        <SCRIPT>page_counter(jcount);</SCRIPT>
+                    </b></span><i class="far fa-clock text-primary me-2"></i><span id="hvn"></span> / Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open mailto:me-2"></i>bellevilledental@gmail.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Belleville Dental</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="professional.html" class="nav-item nav-link">Professional</a>
+                <a href="patient.html" class="nav-item nav-link">Patient</a>
+                <a href="research.html" class="nav-item nav-link">Research</a>
+                <a href="products.html" class="nav-item nav-link">Product</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Dental Knowledge</h1>
+                <a href="index.html" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">Dental Knowledge</a>
+            </div>
+        </div>
+    </div>
+    <div class="section-title mb-4" id="aboutus" style="margin-left: 6%;">
+        <h5 class="position-relative d-inline-block text-primary text-uppercase style="margin-left: 3%;"">About Dental Knowledge</h5>
+    </div>        
+    </div>
+    <h1 style="text-align:center;color: #06A3DA;">What do you need to know when your baby is teething?
+    </h1>
+    <div class="img-dental-floss">
+        <img src="img/be-moc-rang.png" alt="">
+    </div>
+    <p style="color:black;font-size: 20px;padding: 0 10%;">
+        Teething in babies is always a difficult time for both parents and babies. Therefore, parents need to equip
+        themselves with basic information and knowledge to easily handle when their <b> baby is teething </b>. Usually
+        around
+        the beginning of the 6th month, the baby's first baby teeth will gradually appear, the accompanying "disorders"
+        such as fever, anorexia, etc., always make mothers worried. Let's learn more about this difficult time with
+        Belleville Dental Clinic!
+    </p>
+    <div id="toc_container" class="toc_light_blue no_bullets">
+        <p class="toc_title">Main Content
+            <span class="toc_toggle"><button id="button_hide" onclick="hide()">[hide]</button></span>
+        </p>
+        <ul id="toc_list" style="display:block;">
+            <li><a href="#signal">Baby teething signs</a></li>
+            <li><a href="#process">Baby teeth eruption process</a>
+                <ul>
+                    <li>
+                        <a href="#note">Note when your baby is teething</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#how_to_take_care">
+                    How to take care when your baby is teething</a>
+                <ul>
+                    <li>
+                        <a href="#things_to_note">Things to keep in mind when your baby is teething</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="container" style="font-weight: 400;">
+        <h2 id="signal">
+            Baby teething signs
+        </h2>
+        <p>
+            The time of teething of baby teeth is not the same, but usually in the period from 6 to 30 months. The main
+            reason is due to:
+        </p>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/nguyen-nhan-be-cham-moc-rang.jpg">
+        </div>
+        <ul>
+            <li>
+                Babies born prematurely, lack of nutrients.
+            </li>
+            <li>
+                Inherited from family.
+            </li>
+            <li>
+                Lack of calcium, vitamin D and other nutrients causes growth retardation and malnutrition.
+            </li>
+            <li>
+                Due to late weaning, gums are not stimulated.
+            </li>
+            <li>
+                Different geographies.
+            </li>
+        </ul>
+        <p>
+            However, parents can guess the time when their baby's baby teeth are coming through signs such as:
+        </p>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/dau-hieu-moc-rang-o-tre.jpg">
+        </div>
+        <ul>
+            <li>
+                Expression of crying, fatigue, easily agitated.
+            </li>
+            <li>
+                Excessive drooling, swollen gums with sores.
+            </li>
+            <li>
+                Frequently gnawing objects, fingers.
+            </li>
+            <li>
+                Mild digestive upset.
+            </li>
+            <li>
+                Mild fever, poor diet.
+            </li>
+        </ul>
+        <p>
+            These signs usually appear about 3 to 5 days before the tooth erupts and go away after 3 to 7 days.
+        </p>
+        <h2 id="process">
+            Baby teeth eruption process
+        </h2>
+        <p>
+            The order of baby teeth eruption will usually follow the following time periods:
+        </p>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/giai-doan-moc-rang-o-tre.jpg">
+        </div>
+        <ul>
+            <li>
+                From 6 to 9 months: Four central incisors. The lower front teeth will appear first around the 6th month.
+                The child will be irritable, uncomfortable, low-grade fever, .., After the two lower incisors, the two
+                upper incisors will grow in the 8th month.
+            </li>
+            <li>
+                From 7-10 months: Two upper front teeth. 7 months to 10 months, 2 upper front teeth continue to grow,
+                two lower front teeth grow when the baby enters 16 months.
+            </li>
+            <li>
+                From 12-14 months: 4 baby molars. After the incisors grow enough, the molars will gradually appear. The
+                first is the 2 inner teeth of the upper jaw. Then there will be two lower teeth. At this time, it is
+                necessary to focus on supplementing with fluoride and preventing dental disease for children.
+            </li>
+            <li>
+                From 16 to 18 months: 4 milk canines. This tooth will erupt when the child is 16-18 months old. The two
+                lower canines will erupt after the two upper jaws are fully grown. Some babies take up to 22 months to
+                fully develop four milk canines.
+            </li>
+            <li>
+                From 20 to 30 months: The last four primary molars. At the 20th month, the last two molars will fully
+                erupt in the lower jaw. Next will be the appearance of the two upper molars.
+            </li>
+        </ul>
+        <h5 id="note">
+            Note when your baby is teething
+        </h5>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/luu-y-trong-thoi-ky-be-moc-rang.jpg">
+        </div>
+        <p>
+            Newborns complete the teething process at the age of 30 months. Parents should keep in mind the order of
+            their children's teething so that they can react promptly when their children have abnormal signs without
+            being too surprised. or bewildered. Monitor your child regularly, remember and mark on the calendar the
+            changes in the child's teeth so that it can be easily discussed with the doctor when needed.
+        </p>
+        <h2 id="how_to_take_care">
+            How to take care when your baby is teething
+        </h2>
+        <p>
+            Like adults, when teething babies will experience pain, may have a fever leading to skipping meals, loss of
+            appetite. Therefore, gently take care of the children:
+        </p>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/dinh-duong-trong-thoi-ki-be-moc-rang.jpg">
+        </div>
+        <ul>
+            <li>
+                Divide meals into 6-8 meals instead of 3-4 as usual. Just eat a little bit at a time.
+            </li>
+            <li>
+                Stew food for children, soft and smooth, preferably in the form of thin porridge, soup. Then it will be
+                easier for the baby because it only needs to be swallowed, not chewed. With newborns, mothers should
+                breastfeed more or express milk and feed the baby.
+            </li>
+            <li>
+                You should squeeze fruit to get water to keep it cool in the refrigerator, to help minimize pain.
+                Because with cool drinks, the gums will be less swollen and painful.
+            </li>
+        </ul>
+        <h5 id="things_to_note">
+            Things to keep in mind when your baby is teething
+        </h5>
+        <p>
+            If your baby has a fever above 38 degrees, take a warm towel and place it on his forehead or wipe his body.
+            Antipyretic drugs can be used after consulting a doctor. Take care of your baby's oral hygiene by wiping his
+            mouth with a soft cloth and wiping his teeth when he's finished eating.
+        </p>
+        <div  id="attachment_5636" style="text-align: center;" class="wp-caption aligncenter">
+            <img src="img/be-ngua-rang-khi-moc-rang.jpg">
+        </div>
+        <p>
+            During the teething stage, babies tend to put things in their mouths to chew because their teeth are itchy.
+            Prepare objects made of safe materials for health, soft objects, etc. Be careful that children swallow
+            objects. In case of high fever, prolonged diarrhea, lethargy. You should take your child to the doctor to
+            prevent a bad case. Parents should note the above ways to promptly recognize and improvise when children
+            have similar signs. Just monitor your baby regularly, you will surely understand your baby better and have
+            the most appropriate care.
+        </p>
+        <p>
+            If you need more detailed information, do not hesitate to contact Belleville Dental immediately for a
+            consultation
+            The fastest and most accurate query.
+        </p>
+        <ul>
+            <li>
+                <p><b>Address:</b>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi
+                </p>
+            </li>
+            <li>
+                <p><b>Website:</b><a href="index.html">Belleville Dental</a>
+                </p>
+            </li>
+            <li>
+                <p><b>Email:</b>Bellevilledental@gmail.com</a></p>
+            </li>
+            <li>
+                <p><b>Hotline:</b>012 345 67890</p>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="email" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4 ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Site Map</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                        <a class="text-light mb-2" href="abum.html"><i class="bi bi-arrow-right text-primary me-2"></i>Abum Customers</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#header-carousel"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#service"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#pricingplan"><i class="bi bi-arrow-right text-primary me-2"></i>Pricing Plan</a>
+                        <a class="text-light mb-2" href="#riviewcustomer"><i class="bi bi-arrow-right text-primary me-2"></i>Riview Customer</a>
+                        <a class="text-light mb-2" href="#ourdentist"><i class="bi bi-arrow-right text-primary me-2"></i>Our Dentist</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>8A, Ton That Thuyet, Nam Tu Liem, Ha Noi</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
